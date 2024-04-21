@@ -17,5 +17,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    // React is defined but never used
+    'no-unused-vars': ['error', { varsIgnorePattern: 'React' }],
   },
 }
