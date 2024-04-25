@@ -7,7 +7,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/f
 
 function Footer() {
     return (
-        <footer className='w-full flex flex-col items-center fixed bottom-0'>
+        <footer className='w-full flex flex-col items-center  bottom-0'>
             <div className='max-w-screen-2xl w-full pt-4'>
                 <nav className='flex justify-between items-center w-full h-24 px-8 border-b-2 border-[#011632]'>
                     <div className='text-2xl font-bold'>Logo</div>
