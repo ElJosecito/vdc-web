@@ -13,7 +13,7 @@ function Hero() {
   return (
     <section className='w-full flex justify-center items-center h-screen bg-[#f7f7f7]'>
       <div className='max-w-screen-2xl w-full '>
-        <div className='flex justify-between items-center '>
+        <div className='flex justify-between items-center pt-10'>
           <div className='w-3/5 md:pl-10'>
             <h1 className='text-6xl font-bold tracking-[120%] text-[#011632]'>Get Ready For Your Best Ever Dental Experience!</h1>
             <p className='text-lg tracking-[155%] max-w-[537px] mt-6'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
@@ -47,7 +47,7 @@ function Hero() {
               <p className='mt-4 text-[#011632] text-sm pl-2 font-medium'>Top Quailty dental treatment done by field experts, Highly Recommended for everyone.</p>
             </motion.div>
           </div>
-          <div className='w-1/2 relative'>
+          <div className='w-1/2 relative '>
             <img src={doctora} alt='hero' className='w-full h-full object-cover' />
           </div>
         </div>
