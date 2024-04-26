@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <Router />
+      <Router className='bg-[#f7f7f7]'/>
     </>
   )
 }

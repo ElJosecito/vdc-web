@@ -11,7 +11,7 @@ import { FaPhoneVolume } from 'react-icons/fa6'
 
 function Hero() {
   return (
-    <section className='w-full flex justify-center items-center h-screen bg-[#f7f7f7]'>
+    <section className='w-full flex justify-center items-center h-screen'>
       <div className='max-w-screen-2xl w-full '>
         <div className='flex justify-between items-center pt-10'>
           <div className='w-3/5 md:pl-10'>
@@ -36,7 +36,7 @@ function Hero() {
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className='w-96 h-32 shadow-xl rounded-md mt-10 px-4 pt-3 bg-white'>
+              className='w-96 h-32 shadow-xl rounded-md mt-10 px-4 pt-3 bg-white cursor-pointer'>
               <div className='flex justify-between'>
                <div className='flex items-center gap-4'>
                <div className='bg-[#D9B36C] w-10 h-10 rounded-full'></div>
