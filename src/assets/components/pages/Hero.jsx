@@ -18,7 +18,10 @@ function Hero() {
             <h1 className='text-6xl font-bold tracking-[120%] text-[#011632]'>Get Ready For Your Best Ever Dental Experience!</h1>
             <p className='text-lg tracking-[155%] max-w-[537px] mt-6'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
             <div className='flex mt-7'>
-              <button className='bg-[#D9B36C] text-white rounded-xl w-64 font-semibold'>Book an Appointment</button>
+              <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className='bg-[#D9B36C] text-white rounded-xl w-64 font-semibold'>Book an Appointment</motion.button>
               <div className='flex items-center ml-8'>
                 <div className=' bg-gradient-to-b from-[#FFECC9] to-white text-[#D9B36C] rounded-xl w-14 h-14 flex justify-center items-center'>
                   <FaPhoneVolume className='text-3xl' />

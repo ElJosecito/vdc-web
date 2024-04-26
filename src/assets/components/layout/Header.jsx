@@ -5,7 +5,7 @@ function Header() {
     return (
         <header className='w-full flex justify-center fixed z-50 '>
             <div className='max-w-screen-2xl w-full pt-4 '>
-                <nav className='flex justify-between items-center w-full h-20 bg-[#e6f6feee] px-8 rounded-md backdrop-blur-2xl shadow-sm'>
+                <nav className='flex justify-between items-center w-full h-20 bg-[#e6f6feee] px-8 rounded-md backdrop-blur-lg shadow-sm'>
                     <div className='text-2xl font-bold'>Logo</div>
                     <ul className='flex gap-8 font-semibold text-base'>
                         <motion.li whileHover={{ scale: 1.5 }} className='text-sm'>
