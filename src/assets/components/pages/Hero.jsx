@@ -8,15 +8,16 @@ import doctora from '../../images/doctora.png'
 //icons fa6
 import { FaLinkedinIn } from 'react-icons/fa6'
 import { FaPhoneVolume } from 'react-icons/fa6'
+import { IoIosArrowForward } from "react-icons/io";
 
 function Hero() {
   return (
-    <section className='w-full flex justify-center items-center h-screen'>
-      <div className='max-w-screen-2xl w-full '>
-        <div className='flex justify-between items-center pt-10'>
+    <section className='w-full flex justify-center items-center min-h-screen pt-20'>
+      <div className='max-w-screen-xl w-full '>
+        <div className='flex justify-between items-center pt-10 relative'>
           <div className='w-1/2 md:pl-10 '>
-            <h1 className='text-6xl font-bold tracking-[120%] text-[#011632]'>Get Ready For Your Best <br /> Ever Dental Experience!</h1>
-            <p className='text-lg tracking-[155%] max-w-[537px] mt-6'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+            <h1 className='text-6xl font-bold tracking-[120%] text-[#011632] absolute z-10'>Get Ready For Your Best <hr /> Ever Dental Experience!</h1>
+            <p className='text-lg tracking-[155%] max-w-[537px] mt-32'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
             <div className='flex mt-7'>
               <motion.button
                 whileHover={{ scale: 1.1 }}
@@ -54,15 +55,43 @@ function Hero() {
           </div>
           <div className='w-1/2'>
             <div className='h-fit relative '>
-              {/* <div className={`border-2 border-dashed border-[#D9B36C] w-[590px] h-[590px] rounded-full absolute top-0 right-9`}></div> */}
+              {/* <div className={`border-2 border-dashed border-[#D9B36C] w-[590px] h-[590px] rounded-full absolute  -right-10`}></div> */}
 
-              <img src={doctora} alt='hero' className='w-[695.43px] g-[676.42px] relative z-10' />
+              <img src={doctora} alt='hero' className='w-[695.43px] g-[676.42px] relative z-10 right-10' />
 
             </div>
           </div>
         </div>
 
-        <div className='flex justify-between items-center h-20 w-full bg-[#E6F6FE]'>
+
+        <div className=' flex justify-center items-center gap-6 bg-[#E6F6FE] h-fit py-10 rounded-md'>
+          <div className='w-[387PX] h-[300PX] bg-white rounded-md py-6 px-6'>
+            <div className='flex justify-center'>
+              <div className='bg-[#D9B36C] w-16 h-16 rounded-full'></div>
+            </div>'
+
+            <div className='flex justify-center items-center flex-col'>
+              <h2 className='text-2xl font-semibold '>
+                Root Canal Treatment
+              </h2>
+              <p className='text-center mt-4 text-base'>
+                Root canal treatment (endodontics) is a dental procedure used to treat infection at the centre of a tooth.
+              </p>
+            </div>
+
+            <div className='flex justify-center items-center gap-2 mt-4'>
+              <a href="">
+                <p className='text-[#D9B36C] font-semibold'>
+                  Learn More
+                </p>
+              </a>
+              <div className='border-2 rounded-full p-[2px] border-[#D9B36C]'>
+                <IoIosArrowForward className='text-xs' />
+              </div>
+            </div>
+          </div>
+          <div className='w-[387PX] h-[300PX] bg-white rounded-md'></div>
+          <div className='w-[387PX] h-[300PX] bg-white rounded-md'></div>
         </div>
       </div>
     </section>
