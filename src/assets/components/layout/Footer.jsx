@@ -11,7 +11,7 @@ function Footer() {
             <div className='max-w-screen-2xl w-full pt-4'>
                 <nav className='flex justify-between items-center w-full h-24 px-8 border-b-2 border-[#011632]'>
                     <div className='text-2xl font-bold'>Logo</div>
-                    <ul className='flex gap-8 font-semibold text-base'>
+                    <ul className='flex gap-8 font-medium text-base'>
                         <motion.li whileHover={{ scale: 1.3 }}>
                             <a href='/'>Home</a>
                         </motion.li>
@@ -30,18 +30,18 @@ function Footer() {
                 <div className='w-full h-24 flex justify-between items-center '>
                     <p className='text-[#011632] text-sm'>© 2021 All rights reserved</p>
                     {/* socials */}
-                    <div className='flex gap-4'>
+                    <div className='flex gap-4 '>
                         <div className='flex justify-center items-center h-9 w-9 bg-[#011632] rounded-full'>
-                            <FaFacebookF className='text-white text-base' />
+                            <FaFacebookF className='text-white ' />
                         </div>
                         <div className='flex justify-center items-center h-9 w-9 bg-[#011632] rounded-full'>
-                            <FaInstagram className='text-white text-base' />
+                            <FaInstagram className='text-white ' />
                         </div>
                         <div className='flex justify-center items-center h-9 w-9 bg-[#011632] rounded-full'>
-                            <FaLinkedinIn className='text-white text-base' />
+                            <FaLinkedinIn className='text-white ' />
                         </div>
                         <div className='flex justify-center items-center h-9 w-9 bg-[#011632] rounded-full'>
-                            <FaYoutube className='text-white text-base' />
+                            <FaYoutube className='text-white ' />
                         </div>
                     </div>
                 </div>

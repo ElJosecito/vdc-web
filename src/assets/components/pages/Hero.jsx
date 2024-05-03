@@ -175,8 +175,8 @@ function Hero() {
             </div>
 
             <div className='w-1/2 pl-12 h-full'>
-              <h2 className='text-4xl font-semibold text-[#011632]'>Why Choose Smile For All <hr/> Your Dental Treathments?</h2>
-              <p className='text-base mt-4 max-w-screen-sm'>We use only the best quality materials on the market in order <hr/> to provide the best products to our patients.</p>
+              <h2 className='text-4xl font-semibold text-[#011632]'>Why Choose Smile For All <hr /> Your Dental Treathments?</h2>
+              <p className='text-base mt-4 max-w-screen-sm'>We use only the best quality materials on the market in order <hr /> to provide the best products to our patients.</p>
               <ul className='mt-6'>
                 <li className='flex gap-2 mt-4'>
                   <TbShieldCheck className='text-2xl text-[#D9B36C]' />
@@ -203,6 +203,20 @@ function Hero() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className='bg-[#D9B36C] text-white w-56 h-12 rounded-lg font-semibold mt-7'>Book an Appointment</motion.button>
+            </div>
+          </div>
+        </div>
+
+        {/*  */}
+        <div className='max-w-screen-xl w-full px-24 mt-32'>
+          <div className='flex justify-between'>
+            <div className='w-1/2'>
+              <h2 className='text-4xl font-semibold text-[#011632]'>Leave your worries at the door and enjoy a healthier, more precise smile</h2>
+              <p className='text-base mt-4 max-w-screen-sm'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+            </div>
+            <div className='w-1/2 h-[358px] relative'>
+              <div className='bg-red-500 w-[413px] h-[326.69px] absolute right-0 top-0 rounded-md'></div>
+              <div className='bg-blue-500 w-[413px] h-[326.69px] absolute right-10 bottom-0 rounded-md'></div>
 
             </div>
           </div>
