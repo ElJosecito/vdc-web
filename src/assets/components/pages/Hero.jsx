@@ -208,7 +208,7 @@ function Hero() {
         </div>
 
         {/*  */}
-        <div className='max-w-screen-xl w-full px-24 mt-32'>
+        <div className='max-w-screen-xl w-full px-20 mt-32'>
           <div className='flex justify-between'>
             <div className='w-1/2'>
               <h2 className='text-4xl font-semibold text-[#011632]'>Leave your worries at the door and enjoy a healthier, more precise smile</h2>
