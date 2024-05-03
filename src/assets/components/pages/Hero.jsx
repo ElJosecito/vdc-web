@@ -9,6 +9,7 @@ import doctora from '../../images/doctora.png'
 import { FaLinkedinIn } from 'react-icons/fa6'
 import { FaPhoneVolume } from 'react-icons/fa6'
 import { IoIosArrowForward } from "react-icons/io";
+import { TbShieldCheck } from "react-icons/tb";
 
 //infinity scroll
 import InfinityScroll from '../dynamicComponents/InfinityScroll'
@@ -67,7 +68,7 @@ function Hero() {
             </div>
           </div>
 
-
+          {/*  */}
           <div className=' flex justify-center items-center gap-6 bg-[#E6F6FE] h-fit py-10 rounded-md'>
             <div className='w-[387PX] h-[300PX] bg-white rounded-md py-6 px-6'>
               <div className='flex justify-center mb-4'>
@@ -149,7 +150,8 @@ function Hero() {
           </div>
         </div>
 
-        <div className='max-w-screen-xl w-full'>
+        {/*  */}
+        <div className='max-w-screen-xl w-full mb-10'>
           <div className='text-center mt-20 flex flex-col items-center'>
             <h2 className='text-6xl font-semibold text-[#011632] max max-w-screen-lg px-10'>We’re welcoming new patients and can’t wait to meet you.</h2>
             <p className='text-lg mt-4 max-w-screen-sm px-10'>We use to work with most of the health insurance in the country, giving you the best treatment at the lower price, so, what are you waiting to meet us?</p>
@@ -159,10 +161,53 @@ function Hero() {
           >
             <div className='absolute left-0 w-32 h-full bg-gradient-to-r from-white to-transparent z-[1]'></div>
             <div className='absolute right-0 w-32 h-full bg-gradient-to-l from-white to-transparent dark:from-raisin-black dark:to-transparent z-[1]' />
-
             <InfinityScroll />
           </div>
         </div>
+
+        {/*  */}
+        <div className='max-w-screen-xl w-full'>
+          <div className='w-full bg-[#E6F6FE] flex items-center rounded-xl py-10'>
+            <div className='w-1/2 pl-16'>
+              <div className='w-[414px] h-[414px] flex justify-center items-center'>
+                <img src={doctora} alt='hero' className='w-full h-full' />
+              </div>
+            </div>
+
+            <div className='w-1/2 pl-12 h-full'>
+              <h2 className='text-4xl font-semibold text-[#011632]'>Why Choose Smile For All <hr/> Your Dental Treathments?</h2>
+              <p className='text-base mt-4 max-w-screen-sm'>We use only the best quality materials on the market in order <hr/> to provide the best products to our patients.</p>
+              <ul className='mt-6'>
+                <li className='flex gap-2 mt-4'>
+                  <TbShieldCheck className='text-2xl text-[#D9B36C]' />
+                  <p className='text-base font-medium'>Top quality dental team</p>
+                </li>
+
+                <li className='flex gap-2 mt-4'>
+                  <TbShieldCheck className='text-2xl text-[#D9B36C]' />
+                  <p className='text-base font-medium'>State of the art dental services</p>
+                </li>
+
+                <li className='flex gap-2 mt-4'>
+                  <TbShieldCheck className='text-2xl text-[#D9B36C]' />
+                  <p className='text-base font-medium'>Discount on all dental treatment</p>
+                </li>
+
+                <li className='flex gap-2 mt-4'>
+                  <TbShieldCheck className='text-2xl text-[#D9B36C]' />
+                  <p className='text-base font-medium'>Enrollment is quick and easy</p>
+                </li>
+              </ul>
+
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className='bg-[#D9B36C] text-white w-56 h-12 rounded-lg font-semibold mt-7'>Book an Appointment</motion.button>
+
+            </div>
+          </div>
+        </div>
+
 
       </section>
     </>
