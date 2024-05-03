@@ -216,7 +216,7 @@ function Hero() {
             </div>
             <div className='w-1/2 h-[358px] relative'>
               <div className='bg-red-500 w-[413px] h-[326.69px] absolute right-0 top-0 rounded-md'></div>
-              <div className='bg-blue-500 w-[413px] h-[326.69px] absolute right-10 bottom-0 rounded-md'></div>
+              <div className='bg-blue-500 w-[410.05px] h-[326.69px] absolute right-10 bottom-0 rounded-md'></div>
 
             </div>
           </div>
