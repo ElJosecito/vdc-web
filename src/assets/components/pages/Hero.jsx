@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 //motion framer
 import { motion } from 'framer-motion'
 
@@ -15,13 +15,27 @@ import { TbShieldCheck } from "react-icons/tb";
 import InfinityScroll from '../dynamicComponents/InfinityScroll'
 
 function Hero() {
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }
+  , [screenWidth]);
+
   return (
     <>
       <section className='w-full flex flex-col justify-center items-center min-h-screen pt-20'>
         <div className='max-w-screen-xl w-full '>
           <div className='md:flex justify-between items-center pt-10 md:relative'>
             <div className='lg:w-1/2 px-5'>
-              <h1 className='lg:text-6xl text-4xl font-bold tracking-[120%] text-[#011632] md:absolute z-10 '>Get Ready For Your Best Ever Dental Experience!</h1>
+              <h1 className='lg:text-6xl text-4xl font-bold tracking-[120%] text-[#011632] md:absolute z-10 '>Get Ready For Your Best { screenWidth > 1024 ? <hr/> : ``} Ever Dental Experience!</h1>
               <p className='text-lg tracking-[155%] max-w-[537px] lg:mt-32 mt-5'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
               <div className='flex mt-7'>
                 <motion.button
@@ -210,14 +224,14 @@ function Hero() {
 
         {/*  */}
         <div className='max-w-screen-xl w-full lg:px-20 px-5 mt-32'>
-          <div className='flex flex-col-reverse justify-between'>
+          <div className='flex flex-col-reverse lg:flex-row justify-between'>
             <div className='lg:w-1/2'>
               <h2 className='text-4xl font-semibold text-[#011632]'>Leave your worries at the door and enjoy a healthier, more precise smile</h2>
               <p className='text-base mt-4 max-w-screen-sm'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
             </div>
-            <div className='lg:w-1/2 h-[358px] lg:relative flex-justify-center'>
-              <div className='bg-red-500 w-[413px] h-[326.69px] absolute  top-0 rounded-md hidden'></div>
-              <div className='bg-blue-500 w-[410.05px] h-[326.69px] lg:absolute  lg:bottom-0 rounded-md'></div>
+            <div className='lg:w-1/2 h-[358px] lg:relative flex justify-center'>
+              <div className='bg-red-500 w-[413px] h-[326.69px] lg:absolute top-0 rounded-md hidden lg:flex'></div>
+              <div className='bg-blue-500 w-[410.05px] h-[326.69px] lg:absolute lg:left-10 bottom-10 lg:bottom-0 rounded-md'></div>
 
             </div>
           </div>
