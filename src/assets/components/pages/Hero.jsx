@@ -19,10 +19,10 @@ function Hero() {
     <>
       <section className='w-full flex flex-col justify-center items-center min-h-screen pt-20'>
         <div className='max-w-screen-xl w-full '>
-          <div className='flex justify-between items-center pt-10 relative'>
-            <div className='w-1/2'>
-              <h1 className='text-6xl font-bold tracking-[120%] text-[#011632] absolute z-10'>Get Ready For Your Best <hr /> Ever Dental Experience!</h1>
-              <p className='text-lg tracking-[155%] max-w-[537px] mt-32'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+          <div className='md:flex justify-between items-center pt-10 md:relative'>
+            <div className='lg:w-1/2 px-5'>
+              <h1 className='lg:text-6xl text-4xl font-bold tracking-[120%] text-[#011632] md:absolute z-10 '>Get Ready For Your Best Ever Dental Experience!</h1>
+              <p className='text-lg tracking-[155%] max-w-[537px] lg:mt-32 mt-5'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
               <div className='flex mt-7'>
                 <motion.button
                   whileHover={{ scale: 1.1 }}
@@ -58,7 +58,7 @@ function Hero() {
                 <p className='mt-4 text-[#011632] text-sm pl-2 font-medium'>Top Quailty dental treatment done by field experts, Highly Recommended for everyone.</p>
               </motion.div>
             </div>
-            <div className='w-1/2'>
+            <div className='lg:w-1/2'>
               <div className='h-fit relative '>
                 {/* <div className={`border-2 border-dashed border-[#D9B36C] w-[590px] h-[590px] rounded-full absolute  -right-10`}></div> */}
 
@@ -69,7 +69,8 @@ function Hero() {
           </div>
 
           {/*  */}
-          <div className=' flex justify-center items-center gap-6 bg-[#E6F6FE] h-fit py-10 rounded-md'>
+          {/* implements grid layout, its better */}
+          <div className=' flex flex-col lg:flex-row justify-center items-center gap-6 bg-[#E6F6FE] h-fit py-10 rounded-md'>
             <div className='w-[387PX] h-[300PX] bg-white rounded-md py-6 px-6'>
               <div className='flex justify-center mb-4'>
                 <div className='bg-[#D9B36C] w-16 h-16 rounded-full'></div>
@@ -151,10 +152,10 @@ function Hero() {
         </div>
 
         {/*  */}
-        <div className='max-w-screen-xl w-full mb-10'>
+        <section className='max-w-screen-xl w-full mb-10'>
           <div className='text-center mt-20 flex flex-col items-center'>
-            <h2 className='text-6xl font-semibold text-[#011632] max max-w-screen-lg px-10'>We’re welcoming new patients and can’t wait to meet you.</h2>
-            <p className='text-lg mt-4 max-w-screen-sm px-10'>We use to work with most of the health insurance in the country, giving you the best treatment at the lower price, so, what are you waiting to meet us?</p>
+            <h2 className='lg:text-6xl text-4xl font-semibold text-[#011632] max max-w-screen-lg lg:px-10'>We’re welcoming new patients and can’t wait to meet you.</h2>
+            <p className='lg:text-lg  mt-4 max-w-screen-sm px-10'>We use to work with most of the health insurance in the country, giving you the best treatment at the lower price, so, what are you waiting to meet us?</p>
           </div>
 
           <div className='mt-20 py-5 relative'
@@ -163,20 +164,20 @@ function Hero() {
             <div className='absolute right-0 w-32 h-full bg-gradient-to-l from-white to-transparent dark:from-raisin-black dark:to-transparent z-[1]' />
             <InfinityScroll />
           </div>
-        </div>
+        </section>
 
         {/*  */}
-        <div className='max-w-screen-xl w-full'>
-          <div className='w-full bg-[#E6F6FE] flex items-center rounded-xl py-10'>
-            <div className='w-1/2 pl-16'>
+        <section className='max-w-screen-xl w-full'>
+          <div className='w-full bg-[#E6F6FE] flex flex-col-reverse lg:flex-row items-center rounded-xl py-10'>
+            <div className='lg:w-1/2 lg:pl-16'>
               <div className='w-[414px] h-[414px] flex justify-center items-center'>
                 <img src={doctora} alt='hero' className='w-full h-full' />
               </div>
             </div>
 
-            <div className='w-1/2 pl-12 h-full'>
-              <h2 className='text-4xl font-semibold text-[#011632]'>Why Choose Smile For All <hr /> Your Dental Treathments?</h2>
-              <p className='text-base mt-4 max-w-screen-sm'>We use only the best quality materials on the market in order <hr /> to provide the best products to our patients.</p>
+            <div className='lg:w-1/2 lg:pl-12 pl-5 h-full'>
+              <h2 className='text-4xl font-semibold text-[#011632]'>Why Choose Smile For All Your Dental Treathments?</h2>
+              <p className='text-base mt-4 max-w-screen-sm'>We use only the best quality materials on the market in order to provide the best products to our patients.</p>
               <ul className='mt-6'>
                 <li className='flex gap-2 mt-4'>
                   <TbShieldCheck className='text-2xl text-[#D9B36C]' />
@@ -205,18 +206,18 @@ function Hero() {
                 className='bg-[#D9B36C] text-white w-56 h-12 rounded-lg font-semibold mt-7'>Book an Appointment</motion.button>
             </div>
           </div>
-        </div>
+        </section>
 
         {/*  */}
-        <div className='max-w-screen-xl w-full px-20 mt-32'>
-          <div className='flex justify-between'>
-            <div className='w-1/2'>
+        <div className='max-w-screen-xl w-full lg:px-20 px-5 mt-32'>
+          <div className='flex flex-col-reverse justify-between'>
+            <div className='lg:w-1/2'>
               <h2 className='text-4xl font-semibold text-[#011632]'>Leave your worries at the door and enjoy a healthier, more precise smile</h2>
               <p className='text-base mt-4 max-w-screen-sm'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
             </div>
-            <div className='w-1/2 h-[358px] relative'>
-              <div className='bg-red-500 w-[413px] h-[326.69px] absolute right-0 top-0 rounded-md'></div>
-              <div className='bg-blue-500 w-[410.05px] h-[326.69px] absolute right-10 bottom-0 rounded-md'></div>
+            <div className='lg:w-1/2 h-[358px] lg:relative flex-justify-center'>
+              <div className='bg-red-500 w-[413px] h-[326.69px] absolute  top-0 rounded-md hidden'></div>
+              <div className='bg-blue-500 w-[410.05px] h-[326.69px] lg:absolute  lg:bottom-0 rounded-md'></div>
 
             </div>
           </div>

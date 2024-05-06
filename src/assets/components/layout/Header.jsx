@@ -20,7 +20,7 @@ function Header() {
             <div className='max-w-screen-2xl w-full pt-4 '>
                 <nav className={`flex justify-between items-center w-full h-20 px-8 rounded-md backdrop-blur-lg transition-all duration-500  ${scroll ? 'bg-[#E6F6FE] shadow-lg' : 'bg-transparent'}`}>
                     <div className='text-2xl font-bold'>Logo</div>
-                    <ul className='flex gap-8 font-semibold text-base'>
+                    <ul className='flex gap-8 font-semibold text-base hidden'>
                         <motion.li whileHover={{ scale: 1.5 }} className='text-sm'>
                             <a href='/'>Home</a>
                         </motion.li>
@@ -37,7 +37,7 @@ function Header() {
                     <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                        className='bg-[#D9B36C] text-white px-8 py-4 text-sm rounded-xl font-semibold'>Book Now</motion.button>
+                        className='bg-[#D9B36C] text-white px-8 py-4 text-sm rounded-xl font-semibold hidden lg:flex'>Book Now</motion.button>
                 </nav>
             </div>
         </header>
