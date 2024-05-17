@@ -11,7 +11,7 @@ function Footer() {
             <div className='max-w-screen-2xl w-full pt-4'>
                 <nav className='flex justify-between items-center w-full h-24 px-8 border-b-2 border-[#011632]'>
                     <div className='text-2xl font-bold'>Logo</div>
-                    <ul className='flex gap-8 font-medium text-base'>
+                    <ul className='flex md:gap-8 gap-4 font-medium text-base'>
                         <motion.li whileHover={{ scale: 1.3 }}>
                             <a href='/'>Home</a>
                         </motion.li>

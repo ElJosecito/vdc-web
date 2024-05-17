@@ -41,16 +41,16 @@ function Hero() {
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className='bg-[#D9B36C] text-white rounded-xl w-64 font-semibold'>Book an Appointment</motion.button>
-                <div className='flex items-center ml-8'>
+                  className='bg-[#D9B36C] text-white rounded-xl p-4  font-semibold'>Book an Appointment</motion.button>
+                <div className='flex items-center md:ml-8 ml-2'>
                   <div className='border-2 rounded-xl p-1 border-[#25B4F8]'>
-                    <div className='bg-gradient-to-b from-[#FFECC9] to-white text-[#D9B36C] rounded-lg w-12 h-12 flex justify-center items-center'>
-                      <FaPhoneVolume className='text-2xl' />
+                    <div className='bg-gradient-to-b from-[#FFECC9] to-white text-[#D9B36C] rounded-lg w-9 h-9 md:w-12 md:h-12 flex justify-center items-center'>
+                      <FaPhoneVolume className='text-xl md:text-2xl' />
                     </div>
                   </div>
-                  <div className='ml-4'>
-                    <p className='text-[#011632] font-semibold'>Call Us Now</p>
-                    <p className='text-[#D9B36C] font-bold '>+1 123 456 7890</p>
+                  <div className='ml-2 md:ml-4 w-full'>
+                    <p className='text-[#011632] font-semibold text-sm'>Call Us Now</p>
+                    <p className='text-[#D9B36C] font-bold text-sm'>+1 123 456 7890</p>
                   </div>
                 </div>
               </div>
