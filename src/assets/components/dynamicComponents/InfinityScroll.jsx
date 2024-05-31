@@ -22,7 +22,7 @@ const InfinityScroll = () => {
         {DevTools.map((tool) => (
           <li key={tool.id} className="mx-8 cursor-pointer">
             <img
-              className={`w-14 h-14 grayscale object-fill hover:grayscale-0`}
+              className={`min-w-14 h-9 grayscale object-fill hover:grayscale-0`}
               src={tool.icon}
               alt={tool.name}
               title={tool.name}
@@ -35,7 +35,7 @@ const InfinityScroll = () => {
         {DevTools.map((tool) => (
           <li key={tool.id} className="mx-8 cursor-pointer">
             <img
-              className={`w-14 h-14 grayscale object-fill hover:grayscale-0`}
+              className={`min-w-14 h-9 grayscale object-fill hover:grayscale-0`}
               src={tool.icon}
               alt={tool.name}
               title={tool.name}
