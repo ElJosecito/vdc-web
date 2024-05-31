@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 // doctora image
 import doctora from '../../images/doctora.png'
-// import dientes from '../../images/dientes.jpg'
+import dentistInstrument from '../../images/dentist-instruments.jpg'
 
 //icons fa6
 import { FaLinkedinIn } from 'react-icons/fa6'
@@ -233,7 +233,7 @@ function Hero() {
             <div className='lg:w-1/2 h-[358px] lg:relative flex justify-center'>
               <div className='bg-gradient-to-bl from-[#d9b36cd2] to-white text-[#FFECC9] w-[413px] h-[326.69px] lg:absolute top-0 rounded-md hidden lg:flex'></div>
               <div className='bg-blue-500 w-[410.05px] h-[326.69px] lg:absolute lg:left-10 bottom-10 lg:bottom-0 rounded-md overflow-hidden flex justify-center items-center relative'>
-                <img src="https://img.freepik.com/free-photo/close-up-dentist-instruments_23-2151042894.jpg?w=1380&t=st=1716560598~exp=1716561198~hmac=ce4c80525eee0da54811e4f222d26434a4bb6ac55f22ea2f7082908888bd9f4d" alt='hero' className='object-cover h-[500px] absolute left-0 top-0 transform scale-x-[-1]' />
+                <img src={dentistInstrument} alt='dentist intrument' className='object-cover h-[500px] absolute left-0 top-0 transform scale-x-[-1]' />
               </div>
 
             </div>
