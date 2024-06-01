@@ -18,7 +18,7 @@ const InfinityScroll = () => {
         });
       }}
     >
-      <ul className={`infinity flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll`}>
+      <ul className={`infinity flex  justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll`}>
         {DevTools.map((tool) => (
           <li key={tool.id} className="mx-8 cursor-pointer">
             <img
@@ -31,7 +31,7 @@ const InfinityScroll = () => {
         ))}
       </ul>
 
-      <ul className={`infinity flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll`}>
+      <ul className={`infinity flex  justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll`}>
         {DevTools.map((tool) => (
           <li key={tool.id} className="mx-8 cursor-pointer">
             <img

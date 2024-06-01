@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 //motion framer
 import { motion } from 'framer-motion'
 
@@ -28,7 +28,7 @@ function Hero() {
       window.removeEventListener('resize', handleResize);
     };
   }
-  , [screenWidth]);
+    , [screenWidth]);
 
   return (
     <>
@@ -36,7 +36,7 @@ function Hero() {
         <div className='max-w-screen-xl w-full '>
           <div className='md:flex justify-between items-center pt-10 md:relative'>
             <div className='lg:w-1/2 px-5'>
-              <h1 className='lg:text-6xl text-4xl font-bold tracking-[120%] text-[#011632] md:absolute z-10 '>Get Ready For Your Best { screenWidth > 1024 ? <hr/> : ``} Ever Dental Experience!</h1>
+              <h1 className='lg:text-6xl text-4xl font-bold tracking-[120%] text-[#011632] md:absolute z-10 '>Get Ready For Your Best {screenWidth > 1024 ? <hr /> : ``} Ever Dental Experience!</h1>
               <p className='text-lg tracking-[155%] max-w-[537px] lg:mt-32 mt-5'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
               <div className='flex mt-7'>
                 <motion.button
@@ -185,8 +185,9 @@ function Hero() {
         <section className='max-w-screen-xl w-full'>
           <div className='w-full bg-[#E6F6FE] flex flex-col-reverse lg:flex-row items-center rounded-xl py-10'>
             <div className='lg:w-1/2 lg:pl-16'>
-              <div className='w-[414px] h-[414px] flex justify-center items-center'>
-                <img src={doctora} alt='hero' className='w-full h-full' />
+              <div className='w-[414px] h-[414px] flex justify-center items-center bg-red-300 relative md:left-16 overflow-hidden rounded-lg'>
+                <img src='https://img.freepik.com/free-photo/male-dentist-examining-young-woman-with-dental-carver-medical-clinic_662251-2587.jpg?w=1380&t=st=1717265517~exp=1717266117~hmac=90c19ea70c10c75afd75e32b9f1168809ffab7bd87ac146d07f1c466e887ce30'
+                  alt='hero' className='h-full w-full object-cover transform scale-x-[-1] absolute ' />
               </div>
             </div>
 
@@ -239,8 +240,63 @@ function Hero() {
             </div>
           </div>
         </div>
+        {/*  */}
 
+      </section>
 
+      <section className='w-full mt-20 bg-[#E6F6FE] flex justify-center'>
+        <div className='max-w-screen-xl w-full py-10'>
+          <div className='flex flex-col items-center '>
+            <h2 className='text-4xl font-semibold text-[#011632]'>Meet our specialists</h2>
+            <p className='text-base mt-4 max-w-screen-sm text-center'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+          </div>
+
+          <div className='flex justify-center items-center gap-20 my-20'>
+            {/*  */}
+            <div className='w-72 h-72 bg-white rounded-full flex justify-center items-center relative'>
+              {/* linkedin icon */}
+              <div className=' rounded-full absolute -top-2 right-3'>
+                <FaLinkedinIn className='text-2xl text-[#0077B5]' />
+              </div>
+              <img src='https://img.freepik.com/free-photo/i-trying-be-best-doctor_329181-2188.jpg?t=st=1717267011~exp=1717270611~hmac=2b40f40fdff27aff10a51f49b139114907a5d92c97d56ad4aeb7c9732621df80&w=740'
+                alt='doctor' className='w-80 h-[340px] rounded-md object-cover' />
+
+              <div className='flex flex-col items-center justify-center mt-4 absolute bg-gradient-to-r from-[#d9b36c] to-[#ffe4b3] w-[250px] bottom-0 h-[90px] rounded-xl'>
+                <p className='text-lg font-semibold'>Dr. Jane Doe</p>
+                <p className='text-base font-normal'>Dentist</p>
+              </div>
+            </div>
+            {/*  */}
+            <div className='w-72 h-72 bg-white rounded-full flex justify-center items-center relative'>
+              {/* linkedin icon */}
+              <div className=' rounded-full absolute -top-2 right-3'>
+                <FaLinkedinIn className='text-2xl text-[#0077B5]' />
+              </div>
+              <img src='https://img.freepik.com/free-photo/i-trying-be-best-doctor_329181-2188.jpg?t=st=1717267011~exp=1717270611~hmac=2b40f40fdff27aff10a51f49b139114907a5d92c97d56ad4aeb7c9732621df80&w=740'
+                alt='doctor' className='w-80 h-[340px] rounded-md object-cover' />
+
+              <div className='flex flex-col items-center justify-center mt-4 absolute bg-gradient-to-r from-[#d9b36c] to-[#ffe4b3] w-[250px] bottom-0 h-[90px] rounded-xl'>
+                <p className='text-lg font-semibold'>Dr. Jane Doe</p>
+                <p className='text-base font-normal'>Dentist</p>
+              </div>
+            </div>
+
+            {/*  */}
+            <div className='w-72 h-72 bg-white rounded-full flex justify-center items-center relative'>
+              {/* linkedin icon */}
+              <div className=' rounded-full absolute -top-2 right-3'>
+                <FaLinkedinIn className='text-2xl text-[#0077B5]' />
+              </div>
+              <img src='https://img.freepik.com/free-photo/i-trying-be-best-doctor_329181-2188.jpg?t=st=1717267011~exp=1717270611~hmac=2b40f40fdff27aff10a51f49b139114907a5d92c97d56ad4aeb7c9732621df80&w=740'
+                alt='doctor' className='w-80 h-[340px] rounded-md object-cover' />
+
+              <div className='flex flex-col items-center justify-center mt-4 absolute bg-gradient-to-r from-[#d9b36c] to-[#ffe4b3] w-[250px] bottom-0 h-[90px] rounded-xl'>
+                <p className='text-lg font-semibold'>Dr. Jane Doe</p>
+                <p className='text-base font-normal'>Dentist</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   )
