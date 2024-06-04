@@ -11,6 +11,9 @@ import { FaLinkedinIn } from 'react-icons/fa6'
 import { FaPhoneVolume } from 'react-icons/fa6'
 import { IoIosArrowForward } from "react-icons/io";
 import { TbShieldCheck } from "react-icons/tb";
+// star icon
+import { BsStarFill } from 'react-icons/bs'
+
 
 //infinity scroll
 import InfinityScroll from '../dynamicComponents/InfinityScroll'
@@ -36,13 +39,13 @@ function Hero() {
         <div className='max-w-screen-xl w-full '>
           <div className='md:flex justify-between items-center pt-10 md:relative'>
             <div className='lg:w-1/2 px-5'>
-              <h1 className='lg:text-6xl text-4xl font-bold tracking-[120%] text-[#011632] md:absolute z-10 '>Get Ready For Your Best {screenWidth > 1024 ? <hr /> : ``} Ever Dental Experience!</h1>
-              <p className='text-lg tracking-[155%] max-w-[537px] lg:mt-32 mt-5'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+              <h1 className='lg:text-6xl text-4xl font-bold text-[#011632] md:absolute z-10 '>Get Ready For Your Best {screenWidth > 769 ? <hr /> : null} Ever Dental Experience!</h1>
+              <p className='text-lg max-w-[537px] lg:mt-32 md:mt-24 mt-5'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
               <div className='flex mt-7'>
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className='bg-[#D9B36C] text-white rounded-xl p-4  font-semibold'>Book an Appointment</motion.button>
+                  className='bg-[#D9B36C] text-white rounded-xl p-4 font-semibold'>Book an Appointment</motion.button>
                 <div className='flex items-center md:ml-8 ml-2'>
                   <div className='border-2 rounded-xl p-1 border-[#25B4F8]'>
                     <div className='bg-gradient-to-b from-[#FFECC9] to-white text-[#D9B36C] rounded-lg w-9 h-9 md:w-12 md:h-12 flex justify-center items-center'>
@@ -74,8 +77,7 @@ function Hero() {
               </motion.div>
             </div>
             <div className='lg:w-1/2'>
-              <div className='h-fit relative '>
-                {/* <div className={`border-2 border-dashed border-[#D9B36C] w-[590px] h-[590px] rounded-full absolute  -right-10`}></div> */}
+              <div className='h-fit relative mt-10 md:mt-0'>
 
                 <img src={doctora} alt='hero' className='w-[695.43px] g-[676.42px] relative z-10 right-10' />
 
@@ -185,7 +187,7 @@ function Hero() {
         <section className='max-w-screen-xl w-full'>
           <div className='w-full bg-[#E6F6FE] flex flex-col-reverse lg:flex-row items-center rounded-xl py-10'>
             <div className='lg:w-1/2 lg:pl-16'>
-              <div className='w-[414px] h-[414px] flex justify-center items-center bg-red-300 relative md:left-16 overflow-hidden rounded-lg'>
+              <div className='w-[414px] h-[414px] flex justify-center items-center bg-red-300 relative lg:left-16 overflow-hidden rounded-lg mt-10 lg:mt-0'>
                 <img src='https://img.freepik.com/free-photo/male-dentist-examining-young-woman-with-dental-carver-medical-clinic_662251-2587.jpg?w=1380&t=st=1717265517~exp=1717266117~hmac=90c19ea70c10c75afd75e32b9f1168809ffab7bd87ac146d07f1c466e887ce30'
                   alt='hero' className='h-full w-full object-cover transform scale-x-[-1] absolute ' />
               </div>
@@ -226,14 +228,14 @@ function Hero() {
 
         {/*  */}
         <div className='max-w-screen-xl w-full lg:px-20 px-5 mt-32'>
-          <div className='flex flex-col-reverse lg:flex-row justify-between'>
+          <div className='flex flex-col lg:flex-row justify-between'>
             <div className='lg:w-1/2'>
               <h2 className='text-4xl font-semibold text-[#011632]'>Leave your worries at the door and enjoy a healthier, more precise smile</h2>
               <p className='text-base mt-4 max-w-screen-sm'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
             </div>
             <div className='lg:w-1/2 h-[358px] lg:relative flex justify-center'>
               <div className='bg-gradient-to-bl from-[#d9b36cd2] to-white text-[#FFECC9] w-[413px] h-[326.69px] lg:absolute top-0 rounded-md hidden lg:flex'></div>
-              <div className='bg-blue-500 w-[410.05px] h-[326.69px] lg:absolute lg:left-10 bottom-10 lg:bottom-0 rounded-md overflow-hidden flex justify-center items-center relative'>
+              <div className='bg-blue-500 w-[410.05px] h-[326.69px] lg:absolute lg:left-10 bottom-10 lg:bottom-0 rounded-md overflow-hidden flex justify-center items-center relative mt-14 lg:mt-0'>
                 <img src={dentistInstrument} alt='dentist intrument' className='object-cover h-[500px] absolute left-0 top-0 transform scale-x-[-1]' />
               </div>
 
@@ -242,16 +244,17 @@ function Hero() {
         </div>
         {/*  */}
 
+
       </section>
 
       <section className='w-full mt-20 bg-[#E6F6FE] flex justify-center'>
         <div className='max-w-screen-xl w-full py-10'>
           <div className='flex flex-col items-center '>
             <h2 className='text-4xl font-semibold text-[#011632]'>Meet our specialists</h2>
-            <p className='text-base mt-4 max-w-screen-sm text-center'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+            <p className='text-base mt-4 max-w-screen-sm text-center px-3'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
           </div>
 
-          <div className='flex justify-center items-center gap-20 my-20'>
+          <div className='flex flex-col lg:flex-row justify-center items-center gap-20 my-20'>
             {/*  */}
             <div className='w-72 h-72 bg-white rounded-full flex justify-center items-center relative'>
               {/* linkedin icon */}
@@ -298,6 +301,129 @@ function Hero() {
           </div>
         </div>
       </section>
+
+      {/*  */}
+      <section className='w-full flex justify-center'>
+        <div className='max-w-screen-xl w-full py-20'>
+          <section className='max-w-screen-xl w-full mt-20'>
+            <div className='flex flex-col items-center'>
+              <h2 className='text-4xl font-semibold text-[#011632] text-center md-text-start'>What Our Patients Say About Us</h2>
+              <p className='text-base mt-4 max-w-screen-sm text-center px-3'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+            </div>
+
+            <div className='flex flex-col lg:flex-row justify-center items-center gap-10 my-20 px-5'>
+              {/*  */}
+              <div className='md:w-[413px] md:h-[290px] rounded-lg flex flex-col justify-center items-start relative bg-slate-100 p-5 px-7'>
+                <div className='flex gap-4'>
+                  {/* user image */}
+                  <div className='bg-[#D9B36C] w-16 h-16 rounded-full overflow-hidden'>
+                    <img src={dentistInstrument} alt='doctor' className='w-full h-full object-cover rounded-full' />
+                  </div>
+
+                  <div className=''>
+                    <p className='text-[#011632] text-base font-semibold mt-4'>Jane Doe</p>
+                    <div className='flex justify-center items-center gap-2'>
+                      <BsStarFill className='text-[#D9B36C]' />
+                      <BsStarFill className='text-[#D9B36C]' />
+                      <BsStarFill className='text-[#D9B36C]' />
+                      <BsStarFill className='text-[#D9B36C]' />
+                      <BsStarFill className='text-[#D9B36C]' />
+                    </div>
+                  </div>
+                </div>
+                <p className='text-[#011632] text-base pr-8 mt-4'>“Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.”</p>
+              </div>
+
+              {/*  */}
+              <div className='md:w-[413px] md:h-[290px] rounded-lg flex flex-col justify-center items-start relative bg-slate-100 p-5 px-7'>
+                <div className='flex gap-4'>
+                  {/* user image */}
+                  <div className='bg-[#D9B36C] w-16 h-16 rounded-full overflow-hidden'>
+                    <img src={dentistInstrument} alt='doctor' className='w-full h-full object-cover rounded-full' />
+                  </div>
+
+                  <div className=''>
+                    <p className='text-[#011632] text-base font-semibold mt-4'>Jane Doe</p>
+                    <div className='flex justify-center items-center gap-2'>
+                      <BsStarFill className='text-[#D9B36C]' />
+                      <BsStarFill className='text-[#D9B36C]' />
+                      <BsStarFill className='text-[#D9B36C]' />
+                      <BsStarFill className='text-[#D9B36C]' />
+                      <BsStarFill className='text-[#D9B36C]' />
+                    </div>
+                  </div>
+                </div>
+                <p className='text-[#011632] text-base pr-8 mt-4'>“Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.”</p>
+              </div>
+
+              {/*  */}
+              <div className='md:w-[413px] md:h-[290px] rounded-lg flex flex-col justify-center items-start relative bg-slate-100 p-5 px-7'>
+                <div className='flex gap-4'>
+                  {/* user image */}
+                  <div className='bg-[#D9B36C] w-16 h-16 rounded-full overflow-hidden'>
+                    <img src={dentistInstrument} alt='doctor' className='w-full h-full object-cover rounded-full' />
+                  </div>
+
+                  <div className=''>
+                    <p className='text-[#011632] text-base font-semibold mt-4'>Jane Doe</p>
+                    <div className='flex justify-center items-center gap-2'>
+                      <BsStarFill className='text-[#D9B36C]' />
+                      <BsStarFill className='text-[#D9B36C]' />
+                      <BsStarFill className='text-[#D9B36C]' />
+                      <BsStarFill className='text-[#D9B36C]' />
+                      <BsStarFill className='text-[#D9B36C]' />
+                    </div>
+                  </div>
+                </div>
+                <p className='text-[#011632] text-base pr-8 mt-4'>“Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.”</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+
+
+      <section className='w-full bg-[#011632] flex justify-center'>
+        <div className='max-w-screen-xl w-full py-20'>
+          <div className='flex flex-col items-center'>
+            <h2 className='text-4xl font-semibold text-white'>What our patients say about us</h2>
+            <p className='text-base mt-4 max-w-screen-sm text-center text-white'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+          </div>
+
+          <div className='flex flex-col lg:flex-row justify-center items-center gap-20 my-20'>
+            {/*  */}
+            <div className='w-72 h-72 bg-white rounded-md flex flex-col justify-center items-center p-5'>
+              <div className='flex justify-center items-center gap-2'>
+                <BsStarFill className='text-2xl text-[#D9B36C]' />
+                <BsStarFill className='text-2xl text-[#D9B36C]' />
+                <BsStarFill className='text-2xl text-[#D9B36C]' />
+                <BsStarFill className='text-2xl text-[#D9B36C]' />
+                <BsStarFill className='text-2xl text-[#D9B36C]' />
+              </div>
+              <p className='text-base mt-4'>I had a great experience with Smile, they are very professional and kind with their patients.</p>
+              <p className='text-base mt-4 font-semibold'>Jane Doe</p>
+            </div>
+            {/*  */}
+            <div className='w-72 h-72 bg-white rounded-md flex flex-col justify-center items-center p-5'>
+              <div className='flex justify-center items-center gap-2'>
+                <BsStarFill className='text-2xl text-[#D9B36C]' />
+                <BsStarFill className='text-2xl text-[#D9B36C]' />
+                <BsStarFill className='text-2xl text-[#D9B36C]' />
+                <BsStarFill className='text-2xl text-[#D9B36C]' />
+                <BsStarFill className='text-2xl text-[#D9B36C]' />
+              </div>
+              <p className='text-base mt-4'>I had a great experience with Smile, they are very professional and kind with their patients.</p>
+              <p className='text-base mt-4 font-semibold'>Jane Doe</p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
     </>
   )
 }
