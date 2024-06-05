@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
+// logo vital dental center
+import logo from '../../images/logo_vitaldental.png'
+
 function Header() {
 
     const [scroll, setScroll] = useState(false)
@@ -19,7 +22,9 @@ function Header() {
         <header className='w-full flex justify-center fixed z-50 '>
             <div className='max-w-[1350px] w-full pt-4 '>
                 <nav className={`flex justify-between items-center w-full h-20 px-8 rounded-md backdrop-blur-lg transition-all duration-500  ${scroll ? 'bg-[#E6F6FE] shadow-lg' : 'bg-transparent'}`}>
-                    <div className='text-2xl font-bold'>Logo</div>
+                    <div className='text-2xl font-bold'>
+                        <img src={logo} alt="" />
+                    </div>
                     <ul className='lg:flex gap-8 font-semibold text-base hidden'>
                         <motion.li whileHover={{ scale: 1.5 }} className='text-sm'>
                             <a href='/'>Home</a>

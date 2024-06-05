@@ -6,6 +6,11 @@ import { motion } from 'framer-motion'
 import doctora from '../../images/doctora.png'
 import dentistInstrument from '../../images/dentist-instruments.jpg'
 
+// icons
+import tooth from '../../images/icons/tooth.svg'
+import smile from '../../images/icons/smile.svg'
+import implant from '../../images/icons/implant.svg'
+
 //icons fa6
 import { FaLinkedinIn } from 'react-icons/fa6'
 import { FaPhoneVolume } from 'react-icons/fa6'
@@ -17,6 +22,9 @@ import { BsStarFill } from 'react-icons/bs'
 
 //infinity scroll
 import InfinityScroll from '../dynamicComponents/InfinityScroll'
+
+//QuestionsSqare
+import QuestionsSqare from '../staticComponets/QuestionsSqare'
 
 function Hero() {
 
@@ -39,7 +47,7 @@ function Hero() {
         <div className='max-w-screen-xl w-full '>
           <div className='md:flex justify-between items-center pt-10 md:relative'>
             <div className='lg:w-1/2 px-5'>
-              <h1 className='lg:text-6xl text-4xl font-bold text-[#011632] md:absolute z-10 '>Get Ready For Your Best {screenWidth > 769 ? <hr /> : null} Ever Dental Experience!</h1>
+              <h1 className='lg:text-6xl text-4xl font-bold text-[#011632] md:absolute z-10 '>Get Ready For Your Best {screenWidth > 769 ? <br /> : null} Ever Dental Experience!</h1>
               <p className='text-lg max-w-[537px] lg:mt-32 md:mt-24 mt-5'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
               <div className='flex mt-7'>
                 <motion.button
@@ -90,7 +98,9 @@ function Hero() {
           <div className=' flex flex-col lg:flex-row justify-center items-center gap-6 bg-[#E6F6FE] h-fit py-10 rounded-md'>
             <div className='w-[387PX] h-[300PX] bg-white rounded-md py-6 px-6'>
               <div className='flex justify-center mb-4'>
-                <div className='bg-[#D9B36C] w-16 h-16 rounded-full'></div>
+                <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
+                  <img src={tooth} alt='tooth' className='w-12 h-12 ' />
+                </div>
               </div>
 
               <div className='flex justify-center items-center flex-col'>
@@ -116,7 +126,9 @@ function Hero() {
             {/*  */}
             <div className='w-[387PX] h-[300PX] bg-white rounded-md py-6 px-6'>
               <div className='flex justify-center mb-4'>
-                <div className='bg-[#D9B36C] w-16 h-16 rounded-full'></div>
+                <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
+                  <img src={smile} alt='smile' className='w-12 h-12' />
+                </div>
               </div>
 
               <div className='flex justify-center items-center flex-col'>
@@ -142,7 +154,9 @@ function Hero() {
             {/*  */}
             <div className='w-[387PX] h-[300PX] bg-white rounded-md py-6 px-6'>
               <div className='flex justify-center mb-4'>
-                <div className='bg-[#D9B36C] w-16 h-16 rounded-full'></div>
+                <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
+                  <img src={implant} alt='implant' className='w-12 h-12' />
+                </div>
               </div>
 
               <div className='flex justify-center items-center flex-col'>
@@ -305,7 +319,7 @@ function Hero() {
       {/*  */}
       <section className='w-full flex justify-center'>
         <div className='max-w-screen-xl w-full py-20'>
-          <section className='max-w-screen-xl w-full mt-20'>
+          <section className='max-w-screen-xl w-full'>
             <div className='flex flex-col items-center'>
               <h2 className='text-4xl font-semibold text-[#011632] text-center md-text-start'>What Our Patients Say About Us</h2>
               <p className='text-base mt-4 max-w-screen-sm text-center px-3'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
@@ -384,45 +398,44 @@ function Hero() {
 
 
 
-      <section className='w-full bg-[#011632] flex justify-center'>
-        <div className='max-w-screen-xl w-full py-20'>
+      <section className='w-full flex justify-center'>
+        <div className='max-w-screen-xl w-full pb-20'>
           <div className='flex flex-col items-center'>
-            <h2 className='text-4xl font-semibold text-white'>What our patients say about us</h2>
-            <p className='text-base mt-4 max-w-screen-sm text-center text-white'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+            <h2 className='text-5xl font-semibold text-center lg:text-start'>Frequently Ask Question</h2>
+            <p className='text-base mt-4 max-w-screen-sm text-center '>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
           </div>
 
-          <div className='flex flex-col lg:flex-row justify-center items-center gap-20 my-20'>
-            {/*  */}
-            <div className='w-72 h-72 bg-white rounded-md flex flex-col justify-center items-center p-5'>
-              <div className='flex justify-center items-center gap-2'>
-                <BsStarFill className='text-2xl text-[#D9B36C]' />
-                <BsStarFill className='text-2xl text-[#D9B36C]' />
-                <BsStarFill className='text-2xl text-[#D9B36C]' />
-                <BsStarFill className='text-2xl text-[#D9B36C]' />
-                <BsStarFill className='text-2xl text-[#D9B36C]' />
-              </div>
-              <p className='text-base mt-4'>I had a great experience with Smile, they are very professional and kind with their patients.</p>
-              <p className='text-base mt-4 font-semibold'>Jane Doe</p>
-            </div>
-            {/*  */}
-            <div className='w-72 h-72 bg-white rounded-md flex flex-col justify-center items-center p-5'>
-              <div className='flex justify-center items-center gap-2'>
-                <BsStarFill className='text-2xl text-[#D9B36C]' />
-                <BsStarFill className='text-2xl text-[#D9B36C]' />
-                <BsStarFill className='text-2xl text-[#D9B36C]' />
-                <BsStarFill className='text-2xl text-[#D9B36C]' />
-                <BsStarFill className='text-2xl text-[#D9B36C]' />
-              </div>
-              <p className='text-base mt-4'>I had a great experience with Smile, they are very professional and kind with their patients.</p>
-              <p className='text-base mt-4 font-semibold'>Jane Doe</p>
-
-            </div>
-
+          <div className='flex flex-col lg:flex-row justify-center items-center mt-10'>
+            <QuestionsSqare />
           </div>
 
         </div>
       </section>
 
+      <section className='w-full flex justify-center'>
+        <div className='max-w-screen-lg min-h-96 h-fit w-full rounded-lg bg-[#737373] px-7 py-10 flex flex-col md:flex-row items-start md:items-center justify-between'>
+          <div className='flex flex-col items-start md:w-3/5'>
+            <h2 className='text-4xl font-semibold text-white text-start'>Dental Website that's gonna shake the game rules up.</h2>
+            <p className='text-base mt-4 max-w-screen-sm text-start text-white'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className='bg-[#D9B36C] text-white w-56 h-12 rounded-lg font-semibold mt-7'>
+              Book an Appointment
+            </motion.button>
+          </div>
+
+          {/* img */}
+          <div className='w-3/12'>
+            <div className='w-80 h-80 rounded-md flex justify-center items-center overflow-hidden mt-7'>
+              <img src={dentistInstrument} alt='dentist intrument' className='w-full h-full object-cover' />
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
 
     </>
   )
