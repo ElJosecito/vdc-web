@@ -7,10 +7,14 @@ import { motion } from 'framer-motion'
 import doctora from '../../images/doctora.png'
 import dentistInstrument from '../../images/dentist-instruments.jpg'
 
-// icons
+// custom icons
 import tooth from '../../images/icons/tooth.svg'
 import smile from '../../images/icons/smile.svg'
 import implant from '../../images/icons/implant.svg'
+
+import liveChat from '../../images/icons/live-chat.svg'
+import pin from '../../images/icons/pin.svg'
+import time from '../../images/icons/time.svg'
 
 //icons fa6
 import { FaLinkedinIn } from 'react-icons/fa6'
@@ -440,25 +444,51 @@ function Hero() {
 
       {/*  */}
       <section className='w-full flex justify-center'>
-        <div className='max-w-screen-xl w-full py-20 px-3'>
+        <div className='max-w-screen-xl w-full py-20 px-3 flex flex-col items-center'>
           <div className='flex flex-col items-center'>
             <h2 className='text-5xl font-semibold text-center lg:text-start'>Our Location</h2>
             <p className='text-base mt-4 max-w-screen-sm text-center '>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
           </div>
 
+          <div>
           <div className='flex flex-col lg:flex-row justify-center items-center mt-10 h-80 max-w-screen-sm rounded-lg overflow-hidden'>
             <MapComponent />
           </div>
 
-          <div className="max-w-screen-sm w-full h-28 rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] mt-4 flex items-center px-5 gap-4">
+          <div className="w-[640px] h-28 rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] mt-4 flex items-center px-5 gap-4">
             <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
-              <img src={tooth} alt='tooth' className='w-12 h-12 ' />
+              <img src={time} alt='clock' className='w-12 h-12 ' />
             </div>
             <div className=''>
-            <h2 className='text-xl font-semibold text-[#011632]'>Office Timings</h2>
-            <p className='text-base font-normal'>Monday - Saturday (9:00am to 5pm)</p>
-            <p className='text-base font-normal'>Sunday (Closed)</p>
+              <h2 className='text-xl font-semibold text-[#011632]'>Office Timings</h2>
+              <p className='text-base font-normal'>Monday - Saturday (9:00am to 5pm)</p>
+              <p className='text-base font-normal'>Sunday (Closed)</p>
             </div>
+          </div>
+
+          {/* location */}
+          <div className="max-w-screen-sm w-full h-28 rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] mt-4 flex items-center px-5 gap-4">
+            <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
+              <img src={pin} alt='location pin' className='w-12 h-12' />
+            </div>
+
+            <div className=''>
+              <h2 className='text-xl font-semibold text-[#011632]'>Office Address</h2>
+              <p className='text-base font-normal'>1441 Morris Ave, Union, NJ 07083</p>
+            </div>
+          </div>
+
+          {/* live chat */}
+          <div className="max-w-screen-sm w-full h-28 rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] mt-4 flex items-center px-5 gap-4">
+            <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
+              <img src={liveChat} alt='location pin' className='w-12 h-12' />
+            </div>
+
+            <div className=''>
+              <h2 className='text-xl font-semibold text-[#011632]'>Office Address</h2>
+              <p className='text-base font-normal'>1441 Morris Ave, Union, NJ 07083</p>
+            </div>
+          </div>
           </div>
 
         </div>

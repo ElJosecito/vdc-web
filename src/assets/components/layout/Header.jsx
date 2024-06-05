@@ -19,7 +19,7 @@ function Header() {
 
 
     return (
-        <header className='w-full flex justify-center fixed z-50 '>
+        <header className='w-full flex justify-center fixed z-[10000] '>
             <div className='max-w-[1350px] w-full pt-4 '>
                 <nav className={`flex justify-between items-center w-full h-20 px-8 rounded-md backdrop-blur-lg transition-all duration-500  ${scroll ? 'bg-[#E6F6FE] shadow-lg' : 'bg-transparent'}`}>
                     <div className='text-2xl font-bold'>
