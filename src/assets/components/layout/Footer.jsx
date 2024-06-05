@@ -32,8 +32,8 @@ function Footer() {
                     </ul>
                 </nav>
 
-                <div className='w-full h-24 flex justify-between items-center '>
-                    <p className='text-[#011632] text-sm'>© 2021 All rights reserved</p>
+                <div className='w-full h-24 flex flex-col md:flex-row justify-center md:justify-between items-start md:items-center md:gap-4 my-8 px-5'>
+                    <p className='text-[#011632] text-sm py-3'>© 2021 All rights reserved</p>
                     {/* socials */}
                     <div className='flex gap-4 '>
                         <div className='flex justify-center items-center h-9 w-9 bg-[#011632] rounded-full'>

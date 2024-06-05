@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+
 //motion framer
 import { motion } from 'framer-motion'
 
@@ -16,15 +17,18 @@ import { FaLinkedinIn } from 'react-icons/fa6'
 import { FaPhoneVolume } from 'react-icons/fa6'
 import { IoIosArrowForward } from "react-icons/io";
 import { TbShieldCheck } from "react-icons/tb";
+
 // star icon
 import { BsStarFill } from 'react-icons/bs'
-
 
 //infinity scroll
 import InfinityScroll from '../dynamicComponents/InfinityScroll'
 
 //QuestionsSqare
 import QuestionsSqare from '../staticComponets/QuestionsSqare'
+
+// mapComponent
+import MapComponent from '../dynamicComponents/MapComponent'
 
 function Hero() {
 
@@ -405,7 +409,7 @@ function Hero() {
             <p className='text-base mt-4 max-w-screen-sm text-center '>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
           </div>
 
-          <div className='flex flex-col lg:flex-row justify-center items-center mt-10'>
+          <div className='flex flex-col lg:flex-row justify-center items-center mt-10 px-3'>
             <QuestionsSqare />
           </div>
 
@@ -431,12 +435,34 @@ function Hero() {
               <img src={dentistInstrument} alt='dentist intrument' className='w-full h-full object-cover' />
             </div>
           </div>
-
-
-
         </div>
       </section>
 
+      {/*  */}
+      <section className='w-full flex justify-center'>
+        <div className='max-w-screen-xl w-full py-20 px-3'>
+          <div className='flex flex-col items-center'>
+            <h2 className='text-5xl font-semibold text-center lg:text-start'>Our Location</h2>
+            <p className='text-base mt-4 max-w-screen-sm text-center '>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+          </div>
+
+          <div className='flex flex-col lg:flex-row justify-center items-center mt-10 h-80 max-w-screen-sm rounded-lg overflow-hidden'>
+            <MapComponent />
+          </div>
+
+          <div className="max-w-screen-sm w-full h-28 rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] mt-4 flex items-center px-5 gap-4">
+            <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
+              <img src={tooth} alt='tooth' className='w-12 h-12 ' />
+            </div>
+            <div className=''>
+            <h2 className='text-xl font-semibold text-[#011632]'>Office Timings</h2>
+            <p className='text-base font-normal'>Monday - Saturday (9:00am to 5pm)</p>
+            <p className='text-base font-normal'>Sunday (Closed)</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </>
   )
 }
