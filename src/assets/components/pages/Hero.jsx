@@ -457,7 +457,7 @@ function Hero() {
 
           <div className="w-[640px] h-28 rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] mt-4 flex items-center px-5 gap-4">
             <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
-              <img src={time} alt='clock' className='w-12 h-12 ' />
+              <img src={time} alt='clock' className='w-10 h-10 ' />
             </div>
             <div className=''>
               <h2 className='text-xl font-semibold text-[#011632]'>Office Timings</h2>
@@ -469,7 +469,7 @@ function Hero() {
           {/* location */}
           <div className="max-w-screen-sm w-full h-28 rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] mt-4 flex items-center px-5 gap-4">
             <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
-              <img src={pin} alt='location pin' className='w-12 h-12' />
+              <img src={pin} alt='location pin' className='w-10 h-10' />
             </div>
 
             <div className=''>
@@ -481,7 +481,7 @@ function Hero() {
           {/* live chat */}
           <div className="max-w-screen-sm w-full h-28 rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] mt-4 flex items-center px-5 gap-4">
             <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
-              <img src={liveChat} alt='location pin' className='w-12 h-12' />
+              <img src={liveChat} alt='location pin' className='w-10 h-10' />
             </div>
 
             <div className=''>

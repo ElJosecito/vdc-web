@@ -54,8 +54,8 @@ function QuestionsSquare() {
                     <div className="flex justify-between">
                         <h3>{item.question}</h3>
                         <div className="flex">
-                            <FaMinus className={`minus ${activeIndex === index ? '' : 'hidden'}`} onClick={() => showAnswer(index)} />
-                            <FaPlus className={`plus ${activeIndex === index ? 'hidden' : ''}`} onClick={() => showAnswer(index)} />
+                            <FaMinus className={`minus cursor-pointer ${activeIndex === index ? '' : 'hidden'}`} onClick={() => showAnswer(index)} />
+                            <FaPlus className={`plus cursor-pointer ${activeIndex === index ? 'hidden' : ''}`} onClick={() => showAnswer(index)} />
                         </div>
                     </div>
                     <div className={`w-full h-[0.5px] ${activeIndex === index ? 'bg-white' : 'bg-black'} my-3`}></div>
