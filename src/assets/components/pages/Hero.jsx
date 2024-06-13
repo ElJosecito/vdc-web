@@ -78,7 +78,7 @@ function Hero() {
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className='w-96 h-32 rounded-md mt-10 px-4 pt-3 bg-white cursor-pointer shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
+                className='w-full md:w-96 h-32 rounded-md mt-10 px-4 pt-3 bg-white cursor-pointer shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
                 <div className='flex justify-between'>
                   <div className='flex items-center gap-4'>
                     <div className='bg-[#D9B36C] w-10 h-10 rounded-full'></div>
@@ -207,9 +207,9 @@ function Hero() {
 
         {/*  */}
         <section className='max-w-screen-xl w-full'>
-          <div className='w-full bg-[#E6F6FE] flex flex-col-reverse lg:flex-row items-center rounded-xl py-10'>
-            <div className='lg:w-1/2 lg:pl-16'>
-              <div className='w-[414px] h-[414px] flex justify-center items-center bg-red-300 relative lg:left-16 overflow-hidden rounded-lg mt-10 lg:mt-0'>
+          <div className='w-full bg-[#E6F6FE] flex flex-col-reverse lg:flex-row items-start rounded-xl py-10'>
+            <div className='lg:w-1/2 lg:pl-16 pl-5'>
+              <div className='w-[414px] h-[414px] flex items-center bg-red-300 relative lg:left-16 overflow-hidden rounded-lg mt-10 lg:mt-0'>
                 <img src='https://img.freepik.com/free-photo/male-dentist-examining-young-woman-with-dental-carver-medical-clinic_662251-2587.jpg?w=1380&t=st=1717265517~exp=1717266117~hmac=90c19ea70c10c75afd75e32b9f1168809ffab7bd87ac146d07f1c466e887ce30'
                   alt='hero' className='h-full w-full object-cover transform scale-x-[-1] absolute ' />
               </div>
@@ -252,8 +252,8 @@ function Hero() {
         <div className='max-w-screen-xl w-full lg:px-20 px-5 mt-32'>
           <div className='flex flex-col lg:flex-row justify-between'>
             <div className='lg:w-1/2'>
-              <h2 className='text-4xl font-semibold text-[#011632]'>Leave your worries at the door and enjoy a healthier, more precise smile</h2>
-              <p className='text-base mt-4 max-w-screen-sm'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+              <h2 className='text-4xl font-semibold text-[#011632] text-center lg:text-start'>Leave your worries at the door and enjoy a healthier, more precise smile</h2>
+              <p className='text-base mt-4 lg:max-w-screen-sm text-center lg:text-start'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
             </div>
             <div className='lg:w-1/2 h-[358px] lg:relative flex justify-center'>
               <div className='bg-gradient-to-bl from-[#d9b36cd2] to-white text-[#FFECC9] w-[413px] h-[326.69px] lg:absolute top-0 rounded-md hidden lg:flex'></div>
@@ -422,7 +422,8 @@ function Hero() {
 
       <section className='w-full flex justify-center'>
         <div className='max-w-screen-lg min-h-96 h-fit w-full rounded-lg bg-[#737373] px-7 py-10 flex flex-col md:flex-row items-start md:items-center justify-between'>
-          <div className='flex flex-col items-start md:w-3/5'>
+          
+          <div className='flex flex-col items-start md:w-2/4'>
             <h2 className='text-4xl font-semibold text-white text-start'>Dental Website that's gonna shake the game rules up.</h2>
             <p className='text-base mt-4 max-w-screen-sm text-start text-white'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
             <motion.button
@@ -434,7 +435,7 @@ function Hero() {
           </div>
 
           {/* img */}
-          <div className='w-3/12'>
+          <div className='md:w-2/4 flex justify-start md:justify-end items-center'>
             <div className='w-80 h-80 rounded-md flex justify-center items-center overflow-hidden mt-7'>
               <img src={dentistInstrument} alt='dentist intrument' className='w-full h-full object-cover' />
             </div>
@@ -451,11 +452,11 @@ function Hero() {
           </div>
 
           <div>
-          <div className='flex flex-col lg:flex-row justify-center items-center mt-10 h-80 max-w-screen-sm rounded-lg overflow-hidden'>
+          <div className='flex flex-col lg:flex-row justify-center items-center mt-10 h-80 max-w-screen-sm rounded-lg overflow-hidden '>
             <MapComponent />
           </div>
 
-          <div className="w-[640px] h-28 rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] mt-4 flex items-center px-5 gap-4">
+          <div className="md:w-[640px] h-28 rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] mt-4 flex items-center px-5 gap-4">
             <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
               <img src={time} alt='clock' className='w-10 h-10 ' />
             </div>
