@@ -211,7 +211,7 @@ function Hero() {
         <section className='max-w-screen-xl w-full'>
           <div className='w-full bg-[#E6F6FE] flex flex-col-reverse lg:flex-row items-start rounded-xl py-10'>
             <div className='lg:w-1/2 lg:pl-16 pl-5'>
-              <div className='w-[414px] h-[414px] flex items-center bg-red-300 relative lg:left-16 overflow-hidden rounded-lg mt-10 lg:mt-0'>
+              <div className='lg:w-[414px] lg:max-h-[414px] w-[300px] h-[300px] flex items-center bg-red-300 relative lg:left-16 overflow-hidden rounded-lg mt-10 lg:mt-0'>
                 <img src='https://img.freepik.com/free-photo/male-dentist-examining-young-woman-with-dental-carver-medical-clinic_662251-2587.jpg?w=1380&t=st=1717265517~exp=1717266117~hmac=90c19ea70c10c75afd75e32b9f1168809ffab7bd87ac146d07f1c466e887ce30'
                   alt='hero' className='h-full w-full object-cover transform scale-x-[-1] absolute ' />
               </div>
