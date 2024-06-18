@@ -81,7 +81,9 @@ function Hero() {
                 className='w-full md:w-96 h-32 rounded-md mt-10 px-4 pt-3 bg-white cursor-pointer shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
                 <div className='flex justify-between'>
                   <div className='flex items-center gap-4'>
-                    <div className='bg-[#D9B36C] w-10 h-10 rounded-full'></div>
+                    <div className='bg-[#D9B36C] w-10 h-10 rounded-full'>
+                      <img src='https://img.freepik.com/free-photo/i-trying-be-best-doctor_329181-2188.jpg?t=st=1717267011~exp=1717270611~hmac=2b40f40fdff27aff10a51f49b139114907a5d92c97d56ad4aeb7c9732621df80&w=740' alt='dentist' className='w-full h-full object-cover rounded-full' />
+                    </div>
                     <div>
                       <p className='font-semibold'>Dr. Jane Doe</p>
                       <p className='font-normal'>Dentist</p>
