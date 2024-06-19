@@ -159,3 +159,7 @@
 * {
   font-family: 'GeneralSans-Variable', sans-serif;
 }
+
+html{
+  scroll-behavior: smooth;
+}

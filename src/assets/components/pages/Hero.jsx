@@ -51,7 +51,7 @@ function Hero() {
 
   return (
     <>
-      <section className='w-full flex flex-col justify-center items-center min-h-screen pt-20'>
+      <section className='w-full flex flex-col justify-center items-center min-h-screen pt-20' id='home'>
         <div className='max-w-screen-xl w-full '>
           <div className='md:flex justify-between items-center pt-10 md:relative'>
             <div className='lg:w-1/2 px-5'>
@@ -105,7 +105,7 @@ function Hero() {
 
           {/*  */}
           {/* implements grid layout, its better */}
-          <div className=' flex flex-col lg:flex-row justify-center items-center gap-6 bg-[#E6F6FE] h-fit py-10 rounded-md'>
+          <div className=' flex flex-col lg:flex-row justify-center items-center gap-6 bg-[#E6F6FE] h-fit py-10 rounded-md' id='services'>
             <div className='w-[387PX] h-[300PX] bg-white rounded-md py-6 px-6'>
               <div className='flex justify-center mb-4'>
                 <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
@@ -193,7 +193,7 @@ function Hero() {
         </div>
 
         {/*  */}
-        <section className='max-w-screen-xl w-full mb-10'>
+        <section className='max-w-screen-xl w-full mb-10' id='about'>
           <div className='text-center mt-20 flex flex-col items-center'>
             <h2 className='lg:text-6xl text-4xl font-semibold text-[#011632] max max-w-screen-lg lg:px-10'>We’re welcoming new patients and can’t wait to meet you.</h2>
             <p className='lg:text-lg  mt-4 max-w-screen-sm px-10'>We use to work with most of the health insurance in the country, giving you the best treatment at the lower price, so, what are you waiting to meet us?</p>
@@ -446,7 +446,7 @@ function Hero() {
       </section>
 
       {/*  */}
-      <section className='w-full flex justify-center'>
+      <section className='w-full flex justify-center' id='contact'>
         <div className='max-w-screen-xl w-full py-20 px-3 flex flex-col items-center'>
           <div className='flex flex-col items-center'>
             <h2 className='text-5xl font-semibold text-center lg:text-start'>Our Location</h2>

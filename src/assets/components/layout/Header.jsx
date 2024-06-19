@@ -30,13 +30,13 @@ function Header() {
                             <a href='/'>Home</a>
                         </motion.li>
                         <motion.li whileHover={{ scale: 1.5 }} className='text-sm'>
-                            <a href='/services'>Services</a>
+                            <a href='#services'>Services</a>
                         </motion.li>
                         <motion.li whileHover={{ scale: 1.5 }} className='text-sm'>
-                            <a href='/about'>About</a>
+                            <a href='#about'>About</a>
                         </motion.li>
                         <motion.li whileHover={{ scale: 1.5 }} className='text-sm'>
-                            <a href='/contact'>Contact</a>
+                            <a href='#contact'>Contact</a>
                         </motion.li>
                     </ul>
                     <motion.button
