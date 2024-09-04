@@ -78,7 +78,7 @@ function Hero() {
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className='w-full md:w-96 h-32 rounded-md mt-10 px-4 pt-3 bg-white cursor-pointer shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
+                className='w-full md:w-96 min-h-32 rounded-md mt-10 px-4 py-3 bg-white cursor-pointer shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
                 <div className='flex justify-between'>
                   <div className='flex items-center gap-4'>
                     <div className='bg-[#D9B36C] w-10 h-10 rounded-full'>
@@ -106,7 +106,7 @@ function Hero() {
           {/*  */}
           {/* implements grid layout, its better */}
           <div className=' flex flex-col lg:flex-row justify-center items-center gap-6 bg-[#E6F6FE] h-fit py-10 rounded-md' id='services'>
-            <div className='w-[387PX] h-[300PX] bg-white rounded-md py-6 px-6'>
+            <div className='max-w-[387PX] max-h-[300PX] w-full h-full bg-white rounded-md py-6 px-6'>
               <div className='flex justify-center mb-4'>
                 <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
                   <img src={tooth} alt='tooth' className='w-12 h-12 ' />
@@ -134,7 +134,7 @@ function Hero() {
               </div>
             </div>
             {/*  */}
-            <div className='w-[387PX] h-[300PX] bg-white rounded-md py-6 px-6'>
+            <div className='max-w-[387PX] max-h-[300PX] w-full h-full bg-white rounded-md py-6 px-6'>
               <div className='flex justify-center mb-4'>
                 <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
                   <img src={smile} alt='smile' className='w-12 h-12' />
@@ -162,7 +162,7 @@ function Hero() {
               </div>
             </div>
             {/*  */}
-            <div className='w-[387PX] h-[300PX] bg-white rounded-md py-6 px-6'>
+            <div className='max-w-[387PX] max-h-[300PX] w-full h-full bg-white rounded-md py-6 px-6'>
               <div className='flex justify-center mb-4'>
                 <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
                   <img src={implant} alt='implant' className='w-12 h-12' />
@@ -438,8 +438,8 @@ function Hero() {
 
           {/* img */}
           <div className='md:w-2/4 flex justify-start md:justify-end items-center'>
-            <div className='w-80 h-80 rounded-md flex justify-center items-center overflow-hidden mt-7'>
-              <img src={dentistInstrument} alt='dentist intrument' className='w-full h-full object-cover' />
+            <div className='max-w-80 max-h-80 w-full h-full rounded-md flex justify-center items-center overflow-hidden mt-7'>
+              <img src={dentistInstrument} alt='dentist intrument' className='w-full h-full object-cover ' />
             </div>
           </div>
         </div>
