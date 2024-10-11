@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 
 //Routes configuration
 import { Route, Routes } from 'react-router-dom'
@@ -11,38 +11,19 @@ import Footer from '../components/layout/Footer'
 import Hero from '../components/pages/Hero'
 
 // import logo
-import logo from '../images/logo_vitaldental.png'
+// import logo from '../images/logo_vitaldental.png'
 
 function Router() {
 
-    useEffect(() => {
-        document.querySelector('link[rel="icon"]').href = logo
-    }, [])
+    // useEffect(() => {
+    //     // document.querySelector('link[rel="icon"]').href = logo
+    // }, [])
 
     return (
         <>
             <Header />
             <Routes>
-                <Route path="/" element={<Hero/>} />
-                <Route path="/about" element={
-                    <>
-                        <h1>About</h1>
-                        <p>Learn more about us</p>
-                    </>
-                } />
-                <Route path="/contact" element={
-                    <>
-                        <h1>Contact</h1>
-                        <p>Get in touch with us</p>
-                    </>
-                } />
-                <Route path="/services" element={
-                    <>
-                        <h1>Services</h1>
-                        <p>Discover our services</p>
-                    </>
-                } />
-
+                <Route path="/" element={<Hero />} />
             </Routes>
             <Footer />
         </>
