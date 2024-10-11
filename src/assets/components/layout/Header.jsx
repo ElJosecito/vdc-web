@@ -38,7 +38,8 @@ function Header() {
             <div className='max-w-[1350px] w-full lg:pt-3 pt-0 md:px-3 px-0'>
                 <nav className={`flex justify-between items-center w-full h-20 px-8 rounded-md backdrop-blur-lg transition-all duration-500  ${scroll ? 'bg-[#E6F6FE] shadow-lg' : 'bg-transparent'}`}>
                     <div className='text-2xl font-bold'>
-                        <img src={logo} alt="" />
+                        {/* <img src={logo} alt="" /> */}
+                        <h1 className='text-[#D9B36C]'>Logo</h1>
                     </div>
                     <ul className='lg:flex gap-8 font-semibold text-base hidden'>
                         <motion.li whileHover={{ scale: 1.5 }} className='text-sm'>
