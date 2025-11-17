@@ -13,6 +13,7 @@ import { TbShieldCheck } from "react-icons/tb";
 
 // star icon
 // star icon (moved to Testimonials component)
+// star icon moved to Testimonials component
 
 //infinity scroll
 import InfinityScroll from '../dynamicComponents/InfinityScroll'

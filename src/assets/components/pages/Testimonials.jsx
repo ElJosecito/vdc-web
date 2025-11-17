@@ -17,7 +17,7 @@ export default function Testimonials({ testimonials }) {
 
           <div className='flex flex-col lg:flex-row justify-center items-center gap-10 my-20 px-5'>
             {testimonials.map((item) => (
-              <div key={item.id} className='md:w-[413px] md:h-[290px] rounded-lg flex flex-col justify-center items-start relative bg-white p-5 px-7 border-2 border-gray-400 transition-colors duration-150 hover:border-gray-500'>
+              <div key={item.id} className='md:w-[413px] md:h-[290px] rounded-lg flex flex-col justify-center items-start relative bg-white p-5 px-7 border border-gray-200 transition-colors duration-150 hover:border-gray-300'>
                 <div className='flex gap-4'>
                   <div className='bg-[#D9B36C] w-16 h-16 rounded-full overflow-hidden'>
                     <img src={item.img} alt={item.author} className='w-full h-full object-cover rounded-full' />

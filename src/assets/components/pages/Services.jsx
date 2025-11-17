@@ -10,7 +10,7 @@ export default function Services() {
 
   return (
     <div className=' flex flex-col lg:flex-row justify-center items-stretch gap-6 bg-[#E6F6FE] h-fit py-10 rounded-md' id='services'>
-      <div className='w-full lg:w-[387px] h-[320px] bg-white rounded-md py-6 px-6 flex flex-col border-2 border-gray-400 transition-colors duration-150 hover:border-gray-500'>
+  <div className='w-full lg:w-[387px] h-[320px] bg-white rounded-md py-6 px-6 flex flex-col border border-gray-200 transition-colors duration-150 hover:border-gray-300'>
         <div className='flex justify-center mb-4'>
           <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
             <img src={tooth} alt='tooth' className='w-12 h-12 ' />
@@ -38,7 +38,7 @@ export default function Services() {
         </div>
       </div>
 
-  <div className='w-full lg:w-[387px] h-[320px] bg-white rounded-md py-6 px-6 flex flex-col border-2 border-gray-400 transition-colors duration-150 hover:border-gray-500'>
+  <div className='w-full lg:w-[387px] h-[320px] bg-white rounded-md py-6 px-6 flex flex-col border border-gray-200 transition-colors duration-150 hover:border-gray-300'>
         <div className='flex justify-center mb-4'>
           <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
             <img src={smile} alt='smile' className='w-12 h-12' />
@@ -66,7 +66,7 @@ export default function Services() {
         </div>
       </div>
 
-  <div className='w-full lg:w-[387px] h-[320px] bg-white rounded-md py-6 px-6 flex flex-col border-2 border-gray-400 transition-colors duration-150 hover:border-gray-500'>
+  <div className='w-full lg:w-[387px] h-[320px] bg-white rounded-md py-6 px-6 flex flex-col border border-gray-200 transition-colors duration-150 hover:border-gray-300'>
         <div className='flex justify-center mb-4'>
           <div className='bg-[#D9B36C] w-16 h-16 rounded-full flex justify-center items-center'>
             <img src={implant} alt='implant' className='w-12 h-12' />

@@ -15,23 +15,23 @@ export default function ContactSection({ contactForm, handleChange, handleSubmit
         </div>
 
           <div className='mt-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-6 items-start'>
-          <form onSubmit={handleSubmit} className='w-full bg-white rounded-md border-2 border-gray-400 p-6 space-y-4 transition-colors duration-150 hover:border-gray-500'>
+          <form onSubmit={handleSubmit} className='w-full bg-white rounded-md p-6 space-y-4'>
             {formStatus.error && <p className='text-sm text-red-500'>{t('contactForm.error_required')}</p>}
             {formStatus.submitted && <p className='text-sm text-green-600'>{t('contactForm.success')}</p>}
 
             <div>
               <label className='text-sm font-medium text-gray-600'>{t('contact.name')}</label>
-              <input name='name' value={contactForm.name} onChange={handleChange} className='mt-1 w-full border border-gray-400 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#D9B36C]' placeholder={t('contactForm.placeholder_name')} aria-label='Name' />
+              <input name='name' value={contactForm.name} onChange={handleChange} className='mt-1 w-full border border-gray-200 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#D9B36C]' placeholder={t('contactForm.placeholder_name')} aria-label='Name' />
             </div>
 
             <div>
               <label className='text-sm font-medium text-gray-600'>{t('contact.email')}</label>
-              <input name='email' value={contactForm.email} onChange={handleChange} className='mt-1 w-full border border-gray-400 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#D9B36C]' placeholder={t('contactForm.placeholder_email')} aria-label='Email' />
+              <input name='email' value={contactForm.email} onChange={handleChange} className='mt-1 w-full border border-gray-200 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#D9B36C]' placeholder={t('contactForm.placeholder_email')} aria-label='Email' />
             </div>
 
             <div>
               <label className='text-sm font-medium text-gray-600'>{t('contact.message')}</label>
-              <textarea name='message' value={contactForm.message} onChange={handleChange} rows='4' className='mt-1 w-full border border-gray-400 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#D9B36C]' placeholder={t('contactForm.placeholder_message')} aria-label='Message' />
+              <textarea name='message' value={contactForm.message} onChange={handleChange} rows='4' className='mt-1 w-full border border-gray-200 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#D9B36C]' placeholder={t('contactForm.placeholder_message')} aria-label='Message' />
             </div>
 
             <div className='flex items-center gap-4'>
@@ -41,7 +41,7 @@ export default function ContactSection({ contactForm, handleChange, handleSubmit
           </form>
 
             <div className='w-full flex flex-col gap-4'>
-            <div className='bg-white rounded-md border-2 border-gray-400 p-4 flex items-start gap-4 transition-colors duration-150 hover:border-gray-500'>
+            <div className='bg-white rounded-md p-4 flex items-start gap-4 border border-gray-200 transition-colors duration-150 hover:border-gray-300'>
               <div className='bg-[#D9B36C] p-3 rounded-md'><LucideIcon name='MapPin' size={18} className='text-white' /></div>
               <div>
                 <p className='text-sm text-gray-500'>{t('contact.addressTitle')}</p>
@@ -49,7 +49,7 @@ export default function ContactSection({ contactForm, handleChange, handleSubmit
               </div>
             </div>
 
-            <div className='bg-white rounded-md border-2 border-gray-400 p-4 flex items-start gap-4 transition-colors duration-150 hover:border-gray-500'>
+            <div className='bg-white rounded-md p-4 flex items-start gap-4 border border-gray-200 transition-colors duration-150 hover:border-gray-300'>
               <div className='bg-[#D9B36C] p-3 rounded-md'><LucideIcon name='Clock' size={18} className='text-white' /></div>
               <div>
                 <p className='text-sm text-gray-500'>{t('contact.hoursTitle')}</p>
@@ -57,7 +57,7 @@ export default function ContactSection({ contactForm, handleChange, handleSubmit
               </div>
             </div>
 
-            <div className='bg-white rounded-md border-2 border-gray-400 p-4 flex items-start gap-4 transition-colors duration-150 hover:border-gray-500'>
+            <div className='bg-white rounded-md p-4 flex items-start gap-4 border border-gray-200 transition-colors duration-150 hover:border-gray-300'>
               <div className='bg-[#D9B36C] p-3 rounded-md'><LucideIcon name='MessageCircle' size={18} className='text-white' /></div>
               <div>
                 <p className='text-sm text-gray-500'>{t('contact.liveChat')}</p>

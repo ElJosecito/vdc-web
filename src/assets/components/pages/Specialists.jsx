@@ -16,7 +16,7 @@ export default function Specialists({ doctors }) {
 
         <div className='flex flex-col lg:flex-row justify-center items-center gap-8 my-20'>
           {doctors.map((doc) => (
-            <div key={doc.id} className='w-full lg:w-[280px] h-[380px] bg-white rounded-md overflow-hidden flex flex-col border-2 border-gray-400 transition-colors duration-150 hover:border-gray-500 relative'>
+            <div key={doc.id} className='w-full lg:w-[280px] h-[380px] bg-white rounded-md overflow-hidden flex flex-col relative border border-gray-200 transition-colors duration-150 hover:border-gray-300'>
               <div className='absolute top-3 right-3 z-10'>
                 <LucideIcon name='Linkedin' size={20} className='text-[#0077B5]' />
               </div>
