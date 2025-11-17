@@ -1,0 +1,117 @@
+{
+  "header": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Acerca",
+    "contact": "Contacto",
+    "bookNow": "Reservar",
+    "language": "Idioma",
+    "brand": "Centro Dental Vital",
+    "lang_en": "EN",
+    "lang_es": "ES"
+  },
+  "hero": {
+    "title": "¡Prepárate para tu mejor experiencia dental!",
+  "subtitle": "Usamos materiales de la más alta calidad y técnicas comprobadas para brindarte la mejor atención — reserva tu cita con confianza.",
+    "bookAppointment": "Reservar cita",
+    "callUsNow": "Llámanos ahora"
+  },
+  "contact": {
+    "title": "Contacto y ubicación",
+    "subtitle": "Encuéntranos en el mapa, revisa nuestro horario y envía un mensaje — te responderemos en breve.",
+    "addressTitle": "Dirección",
+    "address": "1441 Morris Ave, Union, NJ 07083",
+    "hoursTitle": "Horario",
+    "hours": "Lun - Sáb 9:00am - 5:00pm",
+    "liveChat": "Chat en vivo",
+    "sendMessage": "Enviar mensaje",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "callUs": "Llámanos"
+  }
+  ,
+  "profile": {
+    "name": "Dra. Jane Doe",
+    "role": "Dentista",
+    "note": "Tratamiento dental de alta calidad realizado por expertos en el campo. Altamente recomendado para todos."
+  },
+  "services": {
+    "card1": {
+      "title": "Tratamiento de conducto",
+      "desc": "El tratamiento de conducto (endodoncia) es un procedimiento dental utilizado para tratar infecciones en el interior de un diente."
+    },
+    "card2": {
+      "title": "Odontología estética",
+      "desc": "Mejoramos la apariencia de tus dientes mediante blanqueamiento, coronas y carillas."
+    },
+    "card3": {
+      "title": "Implantes dentales",
+      "desc": "Reemplazo a largo plazo para dientes perdidos usando implantes de titanio para estabilidad y comodidad."
+    },
+    "learnMore": "Saber más"
+  },
+  "about": {
+    "welcomeTitle": "Estamos recibiendo nuevos pacientes y esperamos conocerte pronto.",
+    "welcomeText": "Trabajamos con muchos seguros de salud para hacer la atención más accesible — contáctanos y te explicamos cómo podemos ayudarte."
+  },
+  "why": {
+    "title": "¿Por qué elegir Smile para todos tus tratamientos dentales?",
+    "desc": "Usamos solo los mejores materiales de la mejor calidad en el mercado para brindar los mejores productos a nuestros pacientes.",
+    "item1": "Equipo dental de alta calidad",
+    "item2": "Servicios dentales de última generación",
+    "item3": "Descuento en todos los tratamientos dentales",
+    "item4": "La inscripción es rápida y fácil",
+    "cta": "Reservar cita"
+  },
+  "tagline": {
+    "title": "Deja tus preocupaciones en la puerta y disfruta de una sonrisa más saludable y segura",
+    "text": "Combinamos atención experta con materiales de calidad para que puedas relajarte — tu sonrisa está en buenas manos."
+  },
+  "specialists": {
+    "title": "Conoce a nuestros especialistas",
+    "subtitle": "Usamos solo los mejores materiales en el mercado para brindar los mejores productos a nuestros pacientes, así que no te preocupes por nada y reserva.",
+    "doctors": [
+      { "name": "Dra. Jane Doe", "role": "Dentista" },
+      { "name": "Dr. John Smith", "role": "Ortodontista" },
+      { "name": "Dra. Emily Cruz", "role": "Periodoncista" }
+    ]
+  },
+  "testimonials": {
+    "title": "Lo que nuestros pacientes dicen sobre nosotros",
+    "subtitle": "Usamos solo los mejores materiales en el mercado para brindar los mejores productos a nuestros pacientes, así que no te preocupes por nada y reserva.",
+    "items": [
+      { "author": "Jane Doe", "text": "Me atendieron con mucho cuidado y atención — mi experiencia fue excelente." },
+      { "author": "Carlos M.", "text": "Personal profesional y amable. Recomiendo mucho este centro dental." },
+      { "author": "Laura G.", "text": "Instalaciones modernas y médicos muy capacitados. Muy satisfecha." }
+    ]
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Usamos solo los mejores materiales en el mercado para brindar los mejores productos a nuestros pacientes, así que no te preocupes por nada y reserva."
+  },
+  "footerCta": {
+    "title": "Atención dental excepcional que te pone primero.",
+    "text": "Tratamientos profesionales, instalaciones modernas y un equipo cercano — reserva una cita hoy.",
+    "cta": "Reservar cita"
+  },
+  "footer": {
+    "links": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "about": "Acerca",
+      "contact": "Contacto"
+    },
+    "copy": "© 2021 Todos los derechos reservados"
+  },
+  "contactForm": {
+    "success": "Gracias — tu mensaje ha sido enviado!",
+    "error_required": "Por favor completa todos los campos",
+    "placeholder_name": "Tu nombre",
+    "placeholder_email": "tu@ejemplo.com",
+    "placeholder_message": "¿En qué podemos ayudarte?",
+    "send": "Enviar mensaje",
+    "call": "Llámanos",
+    "liveChatSubtitle": "Inicia una conversación"
+  }
+}

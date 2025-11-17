@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 //Routes configuration
 import { Route, Routes } from 'react-router-dom'

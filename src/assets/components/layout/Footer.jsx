@@ -1,14 +1,17 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import '../../../i18n'
+import { useTranslation } from 'react-i18next'
 
 // logo
-import logo from '../../images/logo_vitaldental.png'
+// logo removed: unused
 
 // react icons, fontawesome 6 icons
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 
 
 function Footer() {
+    const { t } = useTranslation()
     return (
         <footer className='w-full flex flex-col items-center  bottom-0'>
             <div className='max-w-screen-2xl w-full pt-4'>
@@ -16,26 +19,26 @@ function Footer() {
                     <div className='text-2xl font-bold'>
                         {/* <img src={logo} alt="" /> */}
 
-                        <h1 className='text-[#011632]'>Logo</h1>
+                        <h1 className='text-[#011632]'>{t('header.brand')}</h1>
                     </div>
                     <ul className='flex md:gap-8 gap-4 font-medium text-base'>
                         <motion.li whileHover={{ scale: 1.3 }}>
-                            <a href='/'>Home</a>
+                            <a href='/'>{t('footer.links.home')}</a>
                         </motion.li>
                         <motion.li whileHover={{ scale: 1.3 }}>
-                            <a href='/services'>Services</a>
+                            <a href='/services'>{t('footer.links.services')}</a>
                         </motion.li>
                         <motion.li whileHover={{ scale: 1.3 }}>
-                            <a href='/about'>About</a>
+                            <a href='/about'>{t('footer.links.about')}</a>
                         </motion.li>
                         <motion.li whileHover={{ scale: 1.3 }}>
-                            <a href='/contact'>Contact</a>
+                            <a href='/contact'>{t('footer.links.contact')}</a>
                         </motion.li>
                     </ul>
                 </nav>
 
                 <div className='w-full h-24 flex flex-col md:flex-row justify-center md:justify-between items-start md:items-center md:gap-4 my-8 px-5'>
-                    <p className='text-[#011632] text-sm py-3'>© 2021 All rights reserved</p>
+                    <p className='text-[#011632] text-sm py-3'>{t('footer.copy')}</p>
                     {/* socials */}
                     <div className='flex gap-4 '>
                         <div className='flex justify-center items-center h-9 w-9 bg-[#011632] rounded-full'>
@@ -54,7 +57,7 @@ function Footer() {
                 </div>
             </div>
             <div className='w-full h-16 bg-[#011632] flex justify-center items-center'>
-                <p className='text-white text-sm'>© 2021 All rights reserved</p>
+                <p className='text-white text-sm'>{t('footer.copy')}</p>
             </div>
         </footer>
     )

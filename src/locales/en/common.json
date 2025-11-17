@@ -1,0 +1,117 @@
+{
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "bookNow": "Book Now",
+    "language": "Language",
+    "brand": "Vital Dental Center",
+    "lang_en": "EN",
+    "lang_es": "ES"
+  },
+  "hero": {
+    "title": "Get Ready For Your Best Ever Dental Experience!",
+  "subtitle": "We use the highest-quality materials and proven techniques to give you the best care — book your appointment with confidence.",
+    "bookAppointment": "Book an Appointment",
+    "callUsNow": "Call Us Now"
+  },
+  "contact": {
+    "title": "Contact & Location",
+    "subtitle": "Find us on the map, check our hours and send a message — we’ll get back to you shortly.",
+    "addressTitle": "Office Address",
+    "address": "1441 Morris Ave, Union, NJ 07083",
+    "hoursTitle": "Office Timings",
+    "hours": "Mon - Sat 9:00am - 5:00pm",
+    "liveChat": "Live Chat",
+    "sendMessage": "Send Message",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "callUs": "Call us"
+  }
+  ,
+  "profile": {
+    "name": "Dr. Jane Doe",
+    "role": "Dentist",
+    "note": "Top Quality dental treatment done by field experts, Highly Recommended for everyone."
+  },
+  "services": {
+    "card1": {
+      "title": "Root Canal Treatment",
+      "desc": "Root canal treatment (endodontics) is a dental procedure used to treat infection at the centre of a tooth."
+    },
+    "card2": {
+      "title": "Cosmetic Dentistry",
+      "desc": "Improving the appearance of your teeth through whitening, crowns, and veneers."
+    },
+    "card3": {
+      "title": "Dental Implants",
+      "desc": "Long-term replacement for missing teeth using titanium implants for stability and comfort."
+    },
+    "learnMore": "Learn More"
+  },
+  "about": {
+    "welcomeTitle": "We’re accepting new patients and look forward to meeting you.",
+    "welcomeText": "We work with many health insurance providers to make quality care affordable — get in touch and see how we can help."
+  },
+  "why": {
+    "title": "Why Choose Smile For All Your Dental Treatments?",
+    "desc": "We use only the best quality materials on the market in order to provide the best products to our patients.",
+    "item1": "Top quality dental team",
+    "item2": "State of the art dental services",
+    "item3": "Discount on all dental treatment",
+    "item4": "Enrollment is quick and easy",
+    "cta": "Book an Appointment"
+  },
+  "tagline": {
+    "title": "Leave your worries at the door and enjoy a healthier, more confident smile",
+    "text": "We combine expert care with the best materials so you can relax — your smile is in good hands."
+  },
+  "specialists": {
+    "title": "Meet our specialists",
+    "subtitle": "We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.",
+    "doctors": [
+      { "name": "Dr. Jane Doe", "role": "Dentist" },
+      { "name": "Dr. John Smith", "role": "Orthodontist" },
+      { "name": "Dr. Emily Cruz", "role": "Periodontist" }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Patients Say About Us",
+    "subtitle": "We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.",
+    "items": [
+      { "author": "Jane Doe", "text": "They treated me with great care and attention — my experience was excellent." },
+      { "author": "Carlos M.", "text": "Professional and friendly staff. I highly recommend this dental center." },
+      { "author": "Laura G.", "text": "State-of-the-art facilities and very skilled doctors. Very satisfied." }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself."
+  },
+  "footerCta": {
+    "title": "Exceptional dental care that puts you first.",
+    "text": "Professional treatments, modern facilities, and compassionate staff — book an appointment today.",
+    "cta": "Book an Appointment"
+  },
+  "footer": {
+    "links": {
+      "home": "Home",
+      "services": "Services",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "copy": "© 2021 All rights reserved"
+  },
+  "contactForm": {
+    "success": "Thanks — your message was sent!",
+    "error_required": "Please fill in all fields",
+    "placeholder_name": "Your name",
+    "placeholder_email": "you@example.com",
+    "placeholder_message": "How can we help?",
+    "send": "Send Message",
+    "call": "Call us",
+    "liveChatSubtitle": "Start a conversation"
+  }
+}
