@@ -133,7 +133,7 @@ function Hero() {
         {/*  */}
         <section className='max-w-screen-xl w-full mb-10' id='about'>
           <div className='text-center mt-20 flex flex-col items-center'>
-            <h2 className='lg:text-6xl text-4xl font-semibold text-[#011632] max max-w-screen-lg lg:px-10'>{t('about.welcomeTitle')}</h2>
+            <h2 className='lg:text-6xl text-4xl font-semibold text-brand max max-w-screen-lg lg:px-10'>{t('about.welcomeTitle')}</h2>
             <p className='lg:text-lg  mt-4 max-w-screen-sm px-10'>{t('about.welcomeText')}</p>
           </div>
 
@@ -147,7 +147,7 @@ function Hero() {
 
         {/*  */}
         <section className='max-w-screen-xl w-full'>
-          <div className='w-full bg-[#E6F6FE] flex flex-col-reverse lg:flex-row items-start rounded-xl py-10'>
+          <div className='w-full bg-bg-light flex flex-col-reverse lg:flex-row items-start rounded-xl py-10'>
             <div className='lg:w-1/2 lg:pl-16 pl-5'>
               <div className='lg:w-[414px] lg:max-h-[414px] w-[300px] h-[300px] flex items-center bg-red-300 relative lg:left-16 overflow-hidden rounded-lg mt-10 lg:mt-0'>
                 <img src='https://img.freepik.com/free-photo/male-dentist-examining-young-woman-with-dental-carver-medical-clinic_662251-2587.jpg?w=1380&t=st=1717265517~exp=1717266117~hmac=90c19ea70c10c75afd75e32b9f1168809ffab7bd87ac146d07f1c466e887ce30'
@@ -156,26 +156,26 @@ function Hero() {
             </div>
 
             <div className='lg:w-1/2 lg:pl-12 pl-5 h-full'>
-              <h2 className='text-4xl font-semibold text-[#011632]'>{t('why.title')}</h2>
+              <h2 className='text-4xl font-semibold text-brand'>{t('why.title')}</h2>
               <p className='text-base mt-4 max-w-screen-sm'>{t('why.desc')}</p>
               <ul className='mt-6'>
                 <li className='flex gap-2 mt-4'>
-                  <TbShieldCheck className='text-2xl text-[#D9B36C]' />
+                  <TbShieldCheck className='text-2xl text-primary' />
                   <p className='text-base font-medium'>{t('why.item1')}</p>
                 </li>
 
                 <li className='flex gap-2 mt-4'>
-                  <TbShieldCheck className='text-2xl text-[#D9B36C]' />
+                  <TbShieldCheck className='text-2xl text-primary' />
                   <p className='text-base font-medium'>{t('why.item2')}</p>
                 </li>
 
                 <li className='flex gap-2 mt-4'>
-                  <TbShieldCheck className='text-2xl text-[#D9B36C]' />
+                  <TbShieldCheck className='text-2xl text-primary' />
                   <p className='text-base font-medium'>{t('why.item3')}</p>
                 </li>
 
                 <li className='flex gap-2 mt-4'>
-                  <TbShieldCheck className='text-2xl text-[#D9B36C]' />
+                  <TbShieldCheck className='text-2xl text-primary' />
                   <p className='text-base font-medium'>{t('why.item4')}</p>
                 </li>
               </ul>
@@ -183,7 +183,7 @@ function Hero() {
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className='bg-[#D9B36C] text-white w-56 h-12 rounded-lg font-semibold mt-7'>{t('why.cta')}</motion.button>
+                className='bg-primary text-white w-56 h-12 rounded-lg font-semibold mt-7'>{t('why.cta')}</motion.button>
             </div>
           </div>
         </section>
@@ -192,11 +192,11 @@ function Hero() {
         <div className='max-w-screen-xl w-full lg:px-20 px-5 mt-32'>
           <div className='flex flex-col lg:flex-row justify-between'>
             <div className='lg:w-1/2'>
-              <h2 className='text-4xl font-semibold text-[#011632] text-center lg:text-start'>{t('tagline.title')}</h2>
+              <h2 className='text-4xl font-semibold text-brand text-center lg:text-start'>{t('tagline.title')}</h2>
               <p className='text-base mt-4 lg:max-w-screen-sm text-center lg:text-start'>{t('tagline.text')}</p>
             </div>
             <div className='lg:w-1/2 h-[358px] lg:relative flex justify-center'>
-              <div className='bg-gradient-to-bl from-[#d9b36cd2] to-white text-[#FFECC9] w-[413px] h-[326.69px] lg:absolute top-0 rounded-md hidden lg:flex'></div>
+              <div className='bg-gradient-to-bl from-[rgba(217,179,108,0.82)] to-white text-accent w-[413px] h-[326.69px] lg:absolute top-0 rounded-md hidden lg:flex'></div>
               <div className='bg-blue-500 w-[410.05px] h-[326.69px] lg:absolute lg:left-10 bottom-10 lg:bottom-0 rounded-md overflow-hidden flex justify-center items-center relative mt-14 lg:mt-0'>
                 <img src={dentistInstrument} alt='dentist intrument' className='object-cover h-[500px] absolute left-0 top-0 transform scale-x-[-1]' />
               </div>
@@ -237,7 +237,7 @@ function Hero() {
       </section>
 
       <section className='w-full flex justify-center'>
-        <div className='max-w-screen-lg min-h-96 h-fit w-full rounded-lg bg-[#737373] px-7 py-10 flex flex-col md:flex-row items-start md:items-center justify-between'>
+        <div className='max-w-screen-lg min-h-96 h-fit w-full rounded-lg bg-muted px-7 py-10 flex flex-col md:flex-row items-start md:items-center justify-between'>
           
             <div className='flex flex-col items-start md:w-2/4'>
             <h2 className='text-4xl font-semibold text-white text-start'>{t('footerCta.title')}</h2>
@@ -245,7 +245,7 @@ function Hero() {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className='bg-[#D9B36C] text-white w-56 h-12 rounded-lg font-semibold mt-7'>
+              className='bg-primary text-white w-56 h-12 rounded-lg font-semibold mt-7'>
               {t('footerCta.cta')}
             </motion.button>
           </div>

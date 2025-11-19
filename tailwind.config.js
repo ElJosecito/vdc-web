@@ -16,6 +16,18 @@ export default {
 				},
 				
 			},
+      colors: {
+        primary: '#B6964F',
+        'primary-variant': '#B6964F',
+        brand: '#011632',
+        'bg-light': '#E6F6FE',
+        accent: '#FFECC9',
+        'accent-2': '#FFE4B3',
+        muted: '#737373',
+        'social-blue': '#0077B5',
+        info: '#25B4F8',
+        'page-bg': '#f7f7f7'
+      }
     },
   },
   plugins: [],

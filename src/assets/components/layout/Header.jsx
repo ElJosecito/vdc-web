@@ -5,8 +5,7 @@ import { motion } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
 
-// logo vital dental center
-// logo removed: not used
+// logo removed
 
 // icons
 import { FaBars, FaTimes } from 'react-icons/fa'
@@ -44,8 +43,8 @@ function Header() {
             <div className='max-w-[1350px] w-full lg:pt-3 pt-0 md:px-3 px-0'>
                 <nav className={`flex justify-between items-center w-full h-20 px-8 rounded-md backdrop-blur-lg transition-all duration-500  ${scroll ? 'bg-[#E6F6FE] shadow-lg' : 'bg-transparent'}`}>
                     <div className='text-2xl font-bold'>
-                        {/* <img src={logo} alt="" /> */}
-                        <h1 className='text-[#D9B36C]'>{t('header.brand')}</h1>
+                        {/* render brand only if set */}
+                        {t('header.brand') ? <h1 className='text-primary'>{t('header.brand')}</h1> : null}
                     </div>
                     <ul className='lg:flex gap-8 font-semibold text-base hidden'>
                         <motion.li whileHover={{ scale: 1.5 }} className='text-sm'>
@@ -67,7 +66,7 @@ function Header() {
                                                                                     <motion.button
                                                                                         whileHover={{ scale: 1.1 }}
                                                                                         whileTap={{ scale: 0.9 }}
-                                                                                        className='bg-[#D9B36C] text-white px-8 py-4 text-sm rounded-xl font-semibold'>
+                                                                                        className='bg-primary text-white px-8 py-4 text-sm rounded-xl font-semibold'>
                                                                                         {t('header.bookNow')}
                                                                                     </motion.button>
                                                                                 </div>
@@ -95,7 +94,7 @@ function Header() {
                         <motion.button
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
-                            className='bg-[#D9B36C] text-white px-8 py-4 text-sm rounded-xl font-semibold'>
+                            className='bg-primary text-white px-8 py-4 text-sm rounded-xl font-semibold'>
                             {t('header.bookNow')}
                         </motion.button>
                                                 {/* mobile language selector */}

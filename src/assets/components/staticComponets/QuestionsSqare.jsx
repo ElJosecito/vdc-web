@@ -49,7 +49,7 @@ function QuestionsSquare() {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 1 }}
-                    className={`px-10  rounded-lg mb-0 ${activeIndex === index ? 'bg-[#D9B36C] text-white py-7' : 'bg-white text-black py-4'}`}
+                    className={`px-10  rounded-lg mb-0 ${activeIndex === index ? 'bg-primary text-white py-7' : 'bg-white text-black py-4'}`}
                 >
                     <div className="flex justify-between">
                         <h3>{item.question}</h3>
